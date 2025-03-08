@@ -102,6 +102,16 @@ const ImageWorkForm = ({ setFormData, isHidden }: { setFormData: SetState<Create
     }
   }
 
+  const handleCloseModal = () => {
+    if (thumbnailRef.current?.value) thumbnailRef.current.value = ''
+    setIsThumbnailUploading(false)
+  }
+
+  const handleImageProcessed = (file: File) => {
+    handleCloseModal()
+    updateThumbnail(file)
+  }
+
   const handleUploadImage = (e: React.ChangeEvent<HTMLInputElement>, option: string) => {
     e.stopPropagation()
     const file = e.target.files?.[0]
@@ -124,10 +134,6 @@ const ImageWorkForm = ({ setFormData, isHidden }: { setFormData: SetState<Create
       } else { setValidateError('다시 시도해주세요.') }
     }
     reader.onerror = () => { setValidateError('다시 시도해주세요.') }
-  }
-  const handleImageProcessed = (file: File) => {
-    setIsThumbnailUploading(false)
-    updateThumbnail(file)
   }
 
   return (
@@ -433,7 +439,7 @@ const ImageWorkForm = ({ setFormData, isHidden }: { setFormData: SetState<Create
           name={croppieOptions.name}
           path={croppieOptions.path}
           option={croppieOptions.option}
-          closeModal={() => { setIsThumbnailUploading(false) }}
+          closeModal={handleCloseModal}
           returnResult={handleImageProcessed}
         />
       )}
