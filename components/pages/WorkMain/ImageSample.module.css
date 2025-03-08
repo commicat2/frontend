@@ -1,0 +1,19 @@
+.image {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+.image img {
+  object-fit: contain;
+}
+
+.comment {
+  align-self: flex-start;
+}
+
+.commentHeader {
+  font-size: 1.2rem;
+  color: var(--color-gray4);
+  margin-bottom: 1rem;
+}

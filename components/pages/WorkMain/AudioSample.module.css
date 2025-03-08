@@ -1,0 +1,13 @@
+.audio {
+  width: 100%;
+}
+
+.comment {
+  align-self: flex-start;
+}
+
+.commentHeader {
+  font-size: 1.2rem;
+  color: var(--color-gray4);
+  margin-bottom: 1rem;
+}

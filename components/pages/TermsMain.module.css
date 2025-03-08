@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 192rem;
+  margin: 0 auto;
+  padding: 2rem 10rem;
+}
+
+.content {
+  border-radius: 0.5rem;
+  margin: 2.5rem 0 6rem;
+  padding: 2rem;
+  line-height: 200%;
+  background-color: var(--color-white);
+}
+
+.content p {
+  white-space: pre-wrap;
+}

@@ -1,0 +1,130 @@
+.container {
+  position: relative;
+  padding-top: calc(15rem + 25%);
+  background-color: var(--color-gray7);
+  overflow: hidden;
+}
+
+.profileBg {
+  position: absolute;
+  width: 100%;
+  padding-top: 25%;
+  top: 0;
+  overflow: hidden;
+}
+
+.profilePic {
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  bottom: 7rem;
+  left: 2rem;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  overflow: hidden;
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  bottom: 6.5rem;
+  left: 15rem;
+}
+
+.cardTop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.nickname {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.icon {
+  position: relative;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.badgeContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.badgeContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.intro {
+  max-width: 80%;
+  margin-top: 0.7rem;
+  width: max-content;
+  font-size: 1.6rem;
+  height: 4rem;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  color: var(--color-gray3);
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding-top: calc(7.5rem + 25%);
+  }
+
+  .profilePic {
+    width: 5rem;
+    height: 5rem;
+    bottom: 4rem;
+    left: 1rem;
+  }
+
+  .card {
+    bottom: 2rem;
+    left: 6.5rem;
+  }
+
+  .cardTop {
+    gap: 0.2rem;
+  }
+
+  .icon {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+
+  .badgeContainer {
+    gap: 0.3rem;
+    max-width: 50%;
+    margin-left: 0.3rem;
+  }
+
+  .badgeContainer>* {
+    font-size: 1.1rem;
+    padding: 0.2rem 0.4rem;
+    min-width: max-content;
+  }
+
+  .nickname {
+    font-size: 1.6rem;
+  }
+
+  .intro {
+    max-width: 70%;
+    height: 3rem;
+    margin-top: 0.2rem;
+    font-size: 1.1rem;
+  }
+}

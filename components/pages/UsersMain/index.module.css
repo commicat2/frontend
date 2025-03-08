@@ -1,0 +1,11 @@
+.headerText {
+  color: var(--color-gray1);
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 767px) {
+  .headerText {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modalHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.modalTitle {
+  font-size: 2rem;
+}
+
+.contentInput {
+  width: 100%;
+  margin: 2rem 0 2.4rem;
+  border: 0.1rem solid var(--color-gray5);
+  border-radius: 0.8rem;
+  padding: 1.8rem 1.5rem;
+  color: var(--color-gray4);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 30rem;
+}
+
+.submitButton {
+  margin-right: 1rem;
+  font-size: 1.6rem;
+  color: var(--color-black);
+}

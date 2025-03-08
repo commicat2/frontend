@@ -1,0 +1,23 @@
+.selectContainer {
+  margin: 0 auto;
+  padding: 0 10rem;
+  max-width: 192rem;
+}
+
+.select {
+  width: 15rem;
+}
+
+@media screen and (max-width: 1199px) {
+  .selectContainer {
+    max-width: 104.8rem;
+    padding: 0 3.2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .selectContainer {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+}

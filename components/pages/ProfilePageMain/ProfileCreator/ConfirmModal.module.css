@@ -1,0 +1,93 @@
+.modalOverlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  z-index: 3;
+  background-color: var(--color-modal-overlay);
+}
+
+.modal {
+  padding: 3.2rem 4rem;
+  border: 1px solid var(--color-modal-box-border);
+  border-radius: 1.5rem;
+  position: relative;
+  background-color: var(--color-gray8);
+}
+
+.modalTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 40rem;
+}
+
+.bankInfos {
+  width: 100%;
+  margin: 2rem 0 2.4rem;
+  padding: 0 1.8rem;
+  font-size: 1.8rem;
+  color: var(--color-gray3);
+}
+
+.bankInfoHeader {
+  font-size: 1.6rem;
+  color: var(--color-gray4);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.bankInfoLabel {
+  color: var(--color-gray1);
+}
+
+.buttons {
+  display: flex;
+  gap: 2rem;
+  margin-right: 1rem;
+}
+
+.button {
+  color: var(--color-gray4);
+}
+
+.button:hover {
+  color: var(--color-gray1);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    padding: 2rem 3rem;
+  }
+
+  .form {
+    width: 20rem;
+  }
+
+  .bankInfos {
+    margin: 1rem 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .bankInfoHeader {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+  }
+
+  .button {
+    font-size: 1.4rem;
+  }
+}

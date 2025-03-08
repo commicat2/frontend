@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 34rem;
+  min-width: 34rem;
+  height: max-content;
+  padding: 2rem 2.5rem;
+  gap: 0.6rem;
+  background-color: var(--color-gray7);
+  border-radius: 1rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+}
+
+.button {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 5rem;
+  padding: 1.5rem;
+  color: var(--color-gray1);
+  background-color: var(--color-white);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.requestButton {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+.followCancleButton {
+  color: var(--color-white);
+  background-color: var(--color-gray4);
+}
+
+.dmButton {
+  color: var(--color-white);
+  background-color: var(--color-red);
+}
+
+.icon {
+  position: relative;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    width: 100%;
+  }
+}

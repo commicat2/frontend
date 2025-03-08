@@ -1,0 +1,20 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /disable-account
+Disallow: /dm
+Disallow: /edit-portfolio
+Disallow: /followings
+Disallow: /forgot-password
+Disallow: /notifications
+Disallow: /requests
+Disallow: /sign-in
+Disallow: /settings
+Disallow: /update-password/**
+Disallow: /verify-email/**
+
+# Host
+Host: https://www.commicat.com
+
+# Sitemaps
+Sitemap: https://www.commicat.com/sitemap.xml

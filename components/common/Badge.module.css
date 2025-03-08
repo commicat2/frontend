@@ -1,0 +1,73 @@
+.common {
+  display: inline-block;
+  max-width: max-content;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.5rem;
+  color: var(--color-white)
+}
+
+.seekRequest {
+  background-color: var(--color-red);
+}
+
+.seekRequestButton {
+  background-color: var(--color-gray4);
+}
+
+.notSeekRequest {
+  background-color: var(--color-gray4);
+}
+
+.copyrightTransfer {
+  background-color: var(--color-gray4);
+}
+
+.hidden {
+  background-color: var(--color-gray2);
+}
+
+.anonymous {
+  background-color: var(--color-black);
+}
+
+.dm {
+  background-color: var(--color-red-light);
+}
+
+.dmOptional {
+  background-color: var(--color-red-light);
+}
+
+.image {
+  background-color: var(--color-blue-light);
+}
+
+.audio {
+  background-color: var(--color-blue-light);
+}
+
+.video {
+  background-color: var(--color-blue-light);
+}
+
+.text {
+  background-color: var(--color-blue-light);
+}
+
+.other {
+  background-color: var(--color-blue-light);
+}
+
+.detail {
+  background-color: var(--color-blue-light);
+}
+
+.accept {
+  background-color: var(--color-primary);
+}
+
+.reject {
+  background-color: var(--color-red);
+}

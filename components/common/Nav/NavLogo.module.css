@@ -1,0 +1,23 @@
+.logo {
+  display: block;
+  position: relative;
+  width: 20rem;
+  height: 3.6rem;
+}
+
+.smallLogo {
+  display: none;
+  position: relative;
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    display: none;
+  }
+
+  .smallLogo {
+    display: block;
+  }
+}

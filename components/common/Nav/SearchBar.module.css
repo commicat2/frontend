@@ -1,0 +1,33 @@
+.form {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  border: 0;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  padding-left: 4.2rem;
+  color: var(--color-gray2);
+  background-color: var(--color-gray7);
+  outline-color: var(--color-black);
+}
+
+.icon {
+  position: absolute;
+  top: 1.2rem;
+  left: 1.2rem;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+@media screen and (max-width: 767px) {
+  .input {
+    padding: 1.3rem;
+    font-size: 1.4rem;
+  }
+
+  .icon {
+    display: none;
+  }
+}

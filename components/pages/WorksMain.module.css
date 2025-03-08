@@ -1,0 +1,12 @@
+.category {
+  margin: 0.4rem;
+}
+
+.hashTags {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.hashTags button {
+  font-weight: 400;
+}

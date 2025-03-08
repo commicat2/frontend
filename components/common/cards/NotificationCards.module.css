@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.card {
+  border-radius: 0.5rem;
+  padding: 1.6rem;
+  background-color: var(--color-gray6);
+  color: var(--color-gray1);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.dt {
+  color: var(--color-gray3);
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: end;
+}
+
+.content {
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    padding: 1.3rem;
+    font-size: 1.5rem;
+  }
+
+  .dt {
+    font-size: 1rem;
+  }
+}

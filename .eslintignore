@@ -1,0 +1,10 @@
+# Next Config File
+next.config.js
+next.config.mjs
+next-sitemap.config.js
+
+# Sentry Config File
+.env.sentry-build-plugin 
+sentry.*.config.ts
+instrumentation.ts
+app/global-error.tsx

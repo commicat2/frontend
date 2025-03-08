@@ -1,0 +1,43 @@
+.none {
+  display: none;
+}
+
+.modalOverlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  background-color: var(--color-modal-overlay);
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  border: 1px solid var(--color-modal-box-border);
+  border-radius: 1.5rem;
+  padding: 3.2rem 4rem;
+  background-color: var(--color-gray8);
+}
+
+.blob {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 50vh;
+  overflow: auto;
+}
+
+.button {
+  align-self: flex-end;
+  color: var(--color-gray4);
+}
+
+.button:hover {
+  color: var(--color-gray1);
+  text-decoration: underline;
+}

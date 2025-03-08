@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 192rem;
+  margin: 0 auto;
+  padding: 2rem 10rem;
+}
+
+.rooms {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: 40rem;
+  border-radius: 1rem;
+  padding: 2rem 2.5rem;
+  background-color: var(--color-gray7);
+}
+
+.room {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 42rem);
+  border-radius: 1rem;
+  padding: 2rem 2.5rem;
+  background-color: var(--color-gray7);
+}
+
+.headerText {
+  color: var(--color-gray1);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    max-width: 104.8rem;
+    padding: 2rem 3.2rem;
+  }
+
+  .rooms {
+    width: 100%;
+  }
+
+  .room {
+    order: -1;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    margin: 0;
+  }
+}

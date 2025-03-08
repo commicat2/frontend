@@ -1,0 +1,10 @@
+.container {
+  margin: 1.2rem 0;
+}
+
+.link {
+  display: inline-block;
+  color: var(--color-primary);
+  font-weight: 700;
+  text-decoration: underline;
+}

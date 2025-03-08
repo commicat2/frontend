@@ -1,0 +1,40 @@
+.profilePic {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  overflow: hidden;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.content {
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  white-space: pre-line;
+}
+
+.nickname {
+  color: var(--color-gray4);
+}
+
+.nicknameHover {
+  color: var(--color-gray4);
+}
+
+.nicknameHover:hover {
+  color: var(--color-gray1);
+  text-decoration: underline;
+}

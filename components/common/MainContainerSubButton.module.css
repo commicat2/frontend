@@ -1,0 +1,19 @@
+.button {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.selected {
+  text-decoration: underline;
+  color: var(--color-gray1);
+}
+
+.notSelected {
+  color: var(--color-gray4);
+}
+
+@media screen and (max-width: 767px) {
+  .button {
+    font-size: 1.3rem;
+  }
+}

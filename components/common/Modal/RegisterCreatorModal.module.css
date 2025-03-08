@@ -1,0 +1,92 @@
+.modalOverlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  z-index: 3;
+  background-color: var(--color-modal-overlay);
+}
+
+.modal {
+  position: relative;
+  border: 1px solid var(--color-modal-box-border);
+  border-radius: 1.5rem;
+  padding: 3.2rem 4rem;
+  background-color: var(--color-gray8);
+}
+
+.closeButton {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: var(--color-gray8);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.modalHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.modalTitle {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.error {
+  margin: 2rem 0 1rem;
+  color: var(--color-red);
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 15rem;
+  margin-left: 1rem;
+  color: var(--color-gray3);
+  font-size: 1.3rem;
+  white-space: pre-line;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.4rem;
+}
+
+.nameInput {
+  width: 100%;
+  margin-bottom: 2.4rem;
+  border: 0.1rem solid var(--color-gray5);
+  border-radius: 0.8rem;
+  outline: none;
+  margin-top: 0.5rem;
+  padding: 1.8rem 1.5rem;
+}
+
+.juminContainer {
+  display: flex; /* 플렉스박스를 사용하여 자식 요소를 수평으로 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  margin-top: 0.5rem;
+  margin-bottom: 2.4rem;
+}
+
+.juminInput {
+  width: 45%;
+  border: 0.1rem solid var(--color-gray5);
+  border-radius: 0.8rem;
+  outline: none;
+  padding: 1.8rem 1.5rem;
+}

@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 50rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: var(--color-white);
+  text-align: start;
+  overflow: hidden;
+}
+
+.editor {
+  width: 45vw;
+}
+
+.editor>* {
+  outline: none;
+  width: 100%;
+}
+
+.editor img {
+  max-width: 100%;
+}
+
+.editor iframe {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1199px) {
+  .editor {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .editor iframe {
+    max-height: 45vw;
+  }
+}

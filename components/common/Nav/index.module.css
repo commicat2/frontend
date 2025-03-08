@@ -1,0 +1,57 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  max-width: 192rem;
+  height: 9.4rem;
+  margin: 0 auto;
+  padding: 2rem 10rem;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.searchBar {
+  margin: 0 auto 0 1rem;
+  left: 0;
+  max-width: 35rem;
+  width: 100%;
+}
+
+.styledButtonLink {
+  width: 12.8rem;
+}
+
+@media screen and (max-width: 1199px) {
+  .nav {
+    max-width: 104.8rem;
+    padding: 2rem 3.2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav {
+    height: 6.3rem;
+    margin: 0;
+    padding: 0 3.2rem;
+  }
+
+  .left {
+    gap: 1rem;
+  }
+
+  .searchBar {
+    margin-left: 0;
+  }
+
+  .styledButtonLink {
+    min-width: 7rem;
+    width: 7rem;
+    padding: 1rem 0 !important;
+    font-size: 1.4rem !important;
+  }
+}

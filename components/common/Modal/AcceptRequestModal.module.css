@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.modalHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  width: 28rem;
+}
+
+.modalTitle {
+  font-size: 1.8rem;
+}
+
+.modalContent {
+  line-height: 2.2rem;
+  text-align: center;
+  color: var(--color-gray4);
+  white-space: pre-line;
+}
+
+.button {
+  align-self: flex-end;
+  color: var(--color-gray3);
+}
+
+.button:hover {
+  color: var(--color-black);
+}
+
+@media screen and (max-width: 767px) {
+  .modalContent {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+}

@@ -1,0 +1,72 @@
+.container {
+  min-height: 80vh;
+}
+
+.editorContainer {
+  cursor: text;
+  display: flex;
+  width: 100%;
+  min-height: 50rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: var(--color-white);
+  text-align: start;
+  overflow: hidden;
+}
+
+.editor {
+  width: 45vw;
+}
+
+.editor>* {
+  outline: none;
+  width: 100%;
+}
+
+.editor img {
+  max-width: 100%;
+}
+
+.editor iframe {
+  max-width: 100%;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.imageIcon {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+}
+
+.youtubeIcon {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.submitButtons {
+  text-align: end;
+}
+
+.button {
+  margin: 3rem 0.8rem 0;
+  color: var(--color-gray4);
+}
+
+.button:hover {
+  color: var(--color-gray1);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+  .editor iframe {
+    max-height: 45vw;
+  }
+}

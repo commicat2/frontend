@@ -1,0 +1,21 @@
+.headerText {
+  color: var(--color-gray1);
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.categoryContainer {
+  margin-top: 0.4rem;
+}
+
+.seekRequest {
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 767px) {
+  .headerText {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+  }
+}

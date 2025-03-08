@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 60rem; 
+  min-width: 60rem;
+  padding: 2rem 2.5rem;
+  background-color: var(--color-gray7);
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    min-width: 0;
+    width: 100%;
+  }
+}

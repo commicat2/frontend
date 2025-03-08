@@ -1,0 +1,10 @@
+.container {
+  margin: 14rem auto;
+  text-align: center;
+}
+
+.content {
+  margin: 6rem auto;
+  font-size: 1.6rem;
+  color: var(--color-gray1);
+}

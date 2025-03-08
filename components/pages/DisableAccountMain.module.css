@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 30rem;
+  margin: 15vh auto 0;
+}
+
+.complete {
+  width: 25rem;
+  margin-top: 10rem;
+  color: var(--color-gray4);
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 30rem;
+  margin-top: 3rem;
+  color: var(--color-gray3);
+}
+
+.input {
+  width: 100%;
+  border: 0.1rem solid var(--color-gray5);
+  border-radius: 0.8rem;
+  padding: 1.8rem 4rem 1.8rem 1.5rem;
+  color: var(--color-gray4);
+}
+
+.input:focus {
+  color: var(--color-gray1);
+}
+
+.button {
+  margin-right: 2rem;
+  color: var(--color-black);
+  font-size: 1.6rem;
+}
+
+.bottom {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.error {
+  color: var(--color-red);
+  font-size: 1.3rem;
+}

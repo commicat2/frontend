@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.modalContent {
+  width: 28rem;
+  margin-top: 1rem;
+  line-height: 2.2rem;
+  text-align: center;
+  color: var(--color-gray2);
+  white-space: pre-line;
+}
+
+.button {
+  align-self: flex-end;
+  color: var(--color-gray4);
+}
+
+.button:hover {
+  color: var(--color-black);
+}
+
+@media screen and (max-width: 767px) {
+  .modalContent {
+    width: 70vw;
+  }
+}

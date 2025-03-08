@@ -1,0 +1,10 @@
+.container {
+  min-height: 4rem;
+  margin-top: 3.2rem;
+}
+
+.error {
+  margin-bottom: 2rem;
+  color: var(--color-red);
+  font-size: 1.4rem;
+}
