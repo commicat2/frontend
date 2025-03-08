@@ -28,6 +28,7 @@ const CreateWorkFormModal = ({
 
   const handleCreateWork = () => {
     if (!formData.file1 && !formData.file2 && !formData.file3) { setErrorMessage('파일을 업로드해주세요.'); return }
+    if (formData.genre === 5 && formData.sample_genre === 5) { setFormData((prev) => { return { ...prev, sample_genre: 1 } }) }
     if (!request.hidden) {
       switch (formData.sample_genre) {
         case 1:
