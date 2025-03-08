@@ -23,12 +23,11 @@ const CreateWorkFormModal = ({
   setErrorMessage: SetState<string>
 }) => {
   const { mutate, isPending } = useCreateWork()
-  const [formData, setFormData] = useState<CreateWorkRequest>({ request_id: request.id, genre: request.genre, sample_genre: request.genre })
+  const [formData, setFormData] = useState<CreateWorkRequest>({ request_id: request.id, genre: request.genre, sample_genre: request.genre === 5 ? 1 : request.genre })
   const [isConfirmModalOpen, setIsConfirmModalOpen] = useState(false)
 
   const handleCreateWork = () => {
     if (!formData.file1 && !formData.file2 && !formData.file3) { setErrorMessage('파일을 업로드해주세요.'); return }
-    if (formData.genre === 5 && formData.sample_genre === 5) { setFormData((prev) => { return { ...prev, sample_genre: 1 } }) }
     if (!request.hidden) {
       switch (formData.sample_genre) {
         case 1:
