@@ -17,7 +17,7 @@ const Request2Cards = ({ requests, isClient }: {
                 <p>입금 계좌: 기업은행 954-038337-01-010 박지석</p>
                 <p>{`입금 금액: ${!request.amount ? '-' : formatNumber(request.amount)}원`}</p>
                 <p>{`입금 기한: ${!request.dt_expiration ? '- 일' : formatDate(request.dt_expiration)}`}</p>
-                <p>{`입금자명: ${request.client?.bank_account_name}`}</p>
+                <p>{`입금자명: ${request.client?.bank_account_name || ''}`}</p>
               </div>
             )}
           </div>
