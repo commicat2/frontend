@@ -30,7 +30,7 @@ const Page = async ({ searchParams }: SearchParams) => {
   }
 
   try {
-    if (Number(category)) hashTags = await getHashTags(genreKey, Number(category))
+    if (category) hashTags = await getHashTags(genreKey, category)
     else hashTags = []
   } catch { /* ignore error */ }
 

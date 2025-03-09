@@ -236,7 +236,7 @@ export const getEnglishNickname = async (id: number) => {
   return response.data
 }
 
-export const getHashTags = async (genre: number, category: number) => {
+export const getHashTags = async (genre: number, category: string) => {
   const response: AxiosResponse<string[]> = await instance.get(`work-hash-tags/${genre}/${category}/`)
   return response.data
 }
