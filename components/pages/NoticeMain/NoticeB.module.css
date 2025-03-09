@@ -1,0 +1,42 @@
+.content {
+  line-height: 350%;
+}
+
+.comment {
+  color: var(--color-gray2);
+  font-size: 1.5rem;
+  line-height: 150%;
+}
+
+.headerText {
+  color: var(--color-gray1);
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  padding-bottom: 50%;
+}
+
+.image img {
+  object-fit: contain;
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    line-height: 150%;
+  }
+  
+  .headerText {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .comment {
+    font-size: 1.3rem;
+}
+}
