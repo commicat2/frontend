@@ -93,7 +93,7 @@ const NoticeB = () => {
         <br />
         <p>8. 입금 처리가 됐을 경우 요청 내용에 맞게 작업 완료 기한 전까지 작업물을 완성해주세요.</p>
         <p className={styles.comment}>&emsp;* 비공개 요청이 아니라면 상세 페이지에 등록될 샘플 파일들도 준비해주세요.</p>
-        <p className={styles.comment}>&emsp;* 작업 완료 기한을 넘길 경우, 프로필 페이지의 작업 완료율이 내려갑니다.</p>
+        <p className={styles.comment}>&emsp;* 작업 완료 기한이 지났을 경우, 요청이 취소되고 프로필 페이지의 작업 완료율이 내려갑니다.</p>
         <div className={styles.image} style={{ paddingBottom: '63%' }}>
           <Image fill sizes="100%" priority src="/guide7.png" alt="Guide 7" />
         </div>
