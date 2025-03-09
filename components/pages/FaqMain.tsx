@@ -1,12 +1,24 @@
+import MainContainer from 'components/common/MainContainer'
+import FaqCard from 'components/common/FaqCard'
 import styles from './FaqMain.module.css'
 
 const FaqMain = () => {
   return (
-    <main className={styles.container}>
+    <MainContainer>
       <div className={styles.content}>
-        FAQ
+        <p className={styles.headerText}>자주 묻는 질문</p>
+        <hr />
+        <FaqCard>Q.</FaqCard>
+        <br />
+        <FaqCard>Q.</FaqCard>
+        <br />
+        <FaqCard>Q.</FaqCard>
+        <br />
+        <FaqCard>Q.</FaqCard>
+        <br />
+        <FaqCard>Q.</FaqCard>
       </div>
-    </main>
+    </MainContainer>
   )
 }
 
