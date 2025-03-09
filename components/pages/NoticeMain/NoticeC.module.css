@@ -1,5 +1,5 @@
 .content {
-  line-height: 350%;
+  line-height: 3.5;
 }
 
 .comment {
@@ -27,7 +27,8 @@
 
 @media screen and (max-width: 767px) {
   .content {
-    line-height: 150%;
+    line-height: 1.5;
+    font-size: 1.2rem;
   }
   
   .headerText {
@@ -36,6 +37,6 @@
   }
 
   .comment {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 }
