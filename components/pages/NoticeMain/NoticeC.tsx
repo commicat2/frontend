@@ -86,7 +86,7 @@ const NoticeC = () => {
         <div className={styles.image} style={{ paddingBottom: '63%' }}>
           <Image fill sizes="100%" priority src="/guide7.png" alt="Guide 7" />
         </div>
-        <p className={styles.comment}>&emsp;* 작업 완료 기한을 지날 경우, 요청은 취소되고 입금 금액은 자동으로 환불됩니다.</p>
+        <p className={styles.comment}>&emsp;* 작업 완료 기한이 지났을 경우, 요청이 취소되고 입금 금액은 자동으로 환불됩니다.</p>
         <br />
         <p>9. 작업이 완료됐다면, 요청의 완료 탭에서 파일을 수령해주세요.</p>
         <div className={styles.image} style={{ paddingBottom: '71.8%' }}>
