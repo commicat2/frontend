@@ -281,7 +281,7 @@ const ProfileCreator = ({ id, creatorProfile }: Id & { creatorProfile: CreatorSe
         <MainContainerSubHeader>
           {renderGenreButtons()}
         </MainContainerSubHeader>
-        {!seek_request || renderProfileCreatorRequest()}
+        {renderProfileCreatorRequest()}
         {!showButtons || <div className={styles.buttons}>{buttons}</div>}
       </div>
       {!createRequest || (
