@@ -143,9 +143,9 @@ const NoticeB = () => {
         <p className={styles.comment}>&emsp;&emsp;* 본인의 프로필 페이지에 게시됩니다.</p>
         <p className={styles.comment}>&emsp;&emsp;* notion, X 등 다른 소개 페이지 링크를 올리셔도 됩니다.</p>
         <p className={styles.comment}>&emsp;&emsp;* 포트폴리오 작성은 선택사항입니다.</p>
-        <p className={styles.comment}>&emsp;&emsp;* '유효하지 않은 이미지가 포함되어있습니다'라는 오류가 뜰 경우 브라우저 캐시 문제로, 다른 브라우저나 시크릿 탭에서 저장 후 이용해주세요.</p>
+        <p className={styles.comment}>&emsp;&emsp;* &apos;유효하지 않은 이미지가 포함되어있습니다&apos;라는 오류가 뜰 경우 브라우저 캐시 문제로, 다른 브라우저나 시크릿 탭에서 저장 후 이용해주세요.</p>
       </div>
-      </MainContainer>
+    </MainContainer>
   )
 }
 
