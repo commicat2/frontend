@@ -1,7 +1,14 @@
+import Image from 'next/image'
 import styles from './NoticeA.module.css'
 
 const NoticeA = () => {
-  return <div className={styles.container}>커미캣 소개</div>
+  return (
+    <main className={styles.container}>
+      <div className={styles.image}>
+        <Image fill sizes="100%" priority src="/notice-a.png" alt="Commicat Notice A" />
+      </div>
+    </main>
+  )
 }
 
 export default NoticeA

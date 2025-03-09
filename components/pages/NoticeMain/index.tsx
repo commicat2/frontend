@@ -1,4 +1,3 @@
-import MainContainer from 'components/common/MainContainer'
 import NotFoundMain from 'components/pages/NotFoundMain'
 import NoticeA from './NoticeA'
 import NoticeB from './NoticeB'
@@ -20,11 +19,7 @@ const NoticeMain = ({
   } else {
     SelectedNotice = NotFoundMain
   }
-  return (
-    <MainContainer>
-      <SelectedNotice />
-    </MainContainer>
-  )
+  return <SelectedNotice />
 }
 
 export default NoticeMain
