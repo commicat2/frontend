@@ -16,7 +16,7 @@ const HomePageHeader = () => {
           클라이언트 이용 가이드
         </Link>
         <Link className={styles.link} href="/notice/4">
-          파트너 크리에이터 이벤트
+          파트너 크리에이터 이벤트 (~09.09)
         </Link>
       </div>
     </header>
