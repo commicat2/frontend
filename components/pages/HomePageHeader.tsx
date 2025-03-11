@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import styles from './HomePageHeader.module.css'
 
@@ -15,10 +16,12 @@ const HomePageHeader = () => {
         <Link className={styles.link} href="/notice/3">
           클라이언트 이용 가이드
         </Link>
-        <Link className={styles.link} href="/notice/4">
-          파트너 크리에이터 이벤트
-        </Link>
       </div>
+      <Link href="/notice/4">
+        <div className={styles.banner}>
+          <Image fill sizes="100%" src="/partner-banner.png" alt="Partner Banner" />
+        </div>
+      </Link>
     </header>
   )
 }
