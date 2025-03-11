@@ -26,6 +26,7 @@ const SearchBar = () => {
         type="search"
         id="keyword"
         aria-label="keyword"
+        placeholder="크리에이터, 태그 검색"
         value={keyword}
         onFocus={() => { setIsFocus(true) }}
         onBlur={() => { setIsFocus(false) }}
