@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   max-width: 192rem;
   margin: 0 auto;
-  padding: 2rem 10rem;
+  padding: 2rem 13rem;
 }
 
 .rooms {
@@ -36,7 +36,7 @@
 @media screen and (max-width: 1199px) {
   .container {
     max-width: 104.8rem;
-    padding: 2rem 3.2rem;
+    padding: 2rem 5.2rem;
   }
 
   .rooms {

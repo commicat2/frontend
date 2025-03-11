@@ -5,7 +5,7 @@
   max-width: 192rem;
   min-height: 70vh;
   margin: 0 auto;
-  padding: 2rem 10rem;
+  padding: 2rem 13rem;
 }
 
 .content {
@@ -21,14 +21,14 @@
 @media screen and (max-width: 1199px) {
   .container {
     max-width: 104.8rem;
-    padding: 2rem 3.2rem;
+    padding: 2rem 5.2rem;
   }
 }
 
 @media screen and (max-width: 767px) {
   .container {
     margin: 0;
-    padding: 0 3.2rem;
+    padding: 0 5.2rem;
   }
 
   .content {

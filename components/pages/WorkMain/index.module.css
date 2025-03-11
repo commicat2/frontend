@@ -4,7 +4,7 @@
   gap: 2rem;
   max-width: 192rem;
   margin: 0 auto;
-  padding: 2rem 10rem;
+  padding: 2rem 13rem;
 }
 
 .sample {
@@ -35,7 +35,7 @@
 @media screen and (max-width: 1199px) {
   .container {
     max-width: 104.8rem;
-    padding: 2rem 3.2rem;
+    padding: 2rem 5.2rem;
   }
 
   .sample {
@@ -51,6 +51,6 @@
   .container {
     margin: 0;
     margin-bottom: 2rem;
-    padding: 0 3.2rem;
+    padding: 0 5.2rem;
   }
 }
