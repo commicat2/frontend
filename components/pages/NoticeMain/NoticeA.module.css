@@ -2,8 +2,45 @@
   width: 100%;
 }
 
-.image {
+.desktop {
+  display: block;
   position: relative;
   width: 100%;
   padding-top: 200%;
+}
+
+.labtop {
+  display: none;
+  position: relative;
+  width: 100%;
+  padding-top: 243.5%;
+}
+
+.mobile {
+  display: none;
+  position: relative;
+  width: 100%;
+  padding-top: 287%;
+}
+
+@media screen and (max-width: 1199px) {
+  .labtop {
+    display: block;
+  }
+
+  .desktop,
+  .mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile {
+    display: block;
+  }
+
+  .desktop,
+  .labtop {
+    display: none;
+  }
 }
