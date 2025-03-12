@@ -41,6 +41,7 @@ const RootLayout = ({ children }: Children) => {
     <html lang="en">
       <head>
         <meta name="google-site-verification" content="ywau_fnYsccD5E17S7d7DwywcTjwT_5WTU84qiQysjg" />
+        <meta name="naver-site-verification" content="3e15a5adb0fa0af554c0e5d3b2a05fc4c5539113" />
       </head>
       <body>
         <Providers>{children}</Providers>
