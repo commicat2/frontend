@@ -343,7 +343,7 @@ const CreateRequestForm = ({
               className={styles.contentInput}
               id="content"
               ref={contentRef}
-              placeholder="요청 내용을 적어주세요."
+              placeholder="요청 내용을 적어주세요. 파일 전달이 필요하다면 외부 링크를 활용해주세요."
               maxLength={1000}
             />
           </div>
