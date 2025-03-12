@@ -12,13 +12,6 @@ const OtherCategoryButtons = ({ category, handleCategoryClick }: { category: Cat
         전체
       </MainContainerSubButton>
       <MainContainerSubButton
-        selected={category === '1'}
-        disabled={category === '1'}
-        onClick={() => { return handleCategoryClick('1') }}
-      >
-        AI 컨텐츠
-      </MainContainerSubButton>
-      <MainContainerSubButton
         selected={category === '2'}
         disabled={category === '2'}
         onClick={() => { return handleCategoryClick('2') }}

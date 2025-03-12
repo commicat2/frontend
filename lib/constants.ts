@@ -96,13 +96,11 @@ export const TEXT_CATEGORY_NUMBER: Readonly<SelectOption<CategoryNumber, TextCat
   { value: 35, label: '기타(텍스트)' },
 ]
 export const OTHER_CATEGORY: Readonly<SelectOption<CategoryKey, OtherCategory>[]> = [
-  { value: '1', label: 'AI 컨텐츠' },
   { value: '2', label: '프로그래밍' },
   { value: '3', label: '코드 리뷰' },
   { value: 'Z', label: '기타' },
 ]
 export const OTHER_CATEGORY_NUMBER: Readonly<SelectOption<CategoryNumber, OtherCategory>[]> = [
-  { value: 1, label: 'AI 컨텐츠' },
   { value: 2, label: '프로그래밍' },
   { value: 3, label: '코드 리뷰' },
   { value: 35, label: '기타' },
