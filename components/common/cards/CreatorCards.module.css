@@ -76,9 +76,13 @@
   margin-left: 2.4rem;
   max-width: 34rem;
   overflow: hidden;
+  text-align: center;
   text-overflow: ellipsis;
   color: var(--color-gray1);
   font-size: 1.6rem;
+  line-height: 2.8rem;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
 }
 
 @media screen and (max-width: 767px) {
