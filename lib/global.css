@@ -1,12 +1,14 @@
 :root {
   --color-primary: #439F37;
   --color-primary-light: #6BEB65;
+  --color-background: #EEF4ED;
   --color-red: #FF5B56;
   --color-red-light: #FF9F9F;
-  --color-blue-light: #7DB3C8;
+  --color-purple: #64379F;
+  --color-blue: #375F9F;
   --color-yellow: #FBE54D;
   --color-white: #FFFFFF;
-  --color-black: #222435;
+  --color-black: #292929;
   --color-gray1: #353A48;
   --color-gray2: #676767;
   --color-gray3: #7C8194;
@@ -17,10 +19,17 @@
   --color-gray8: #F0F6FF;
   --color-gray9: #F3F6F9;
   --color-gray10: #E6EAF9;
+  --color-gray11: #EAEAEA;
+  --color-gray12: #D9D9D9;
+  --color-gray13: #CDCDCD;
+  --color-gray14: #7A7A7A;
+  --color-gray15: #B0B0B0;
   --color-edit-image-overlay: rgba(50, 50, 50, 0.5);
   --color-card-overlay: rgba(0, 0, 0, 0.2);
   --color-modal-overlay: rgba(0, 0, 0, 0.5);
   --color-modal-box-border: #DEE2E6;
+  --color-button: #439F37;
+  --color-button-not-selected: #B9E9DA;
 }
 
 @font-face {
@@ -113,10 +122,10 @@ html {
 
 body {
   margin: 0;
-  background-color: var(--color-gray8);
   word-break: keep-all;
   font-family: 'Pretendard', sans-serif;
   font-size: 1.6rem;
+  background-color: var(--color-background);
 }
 
 ::placeholder {
@@ -132,7 +141,7 @@ body {
 }
 
 main {
-  min-height: 70vh;
+  min-height: 50vh;
 }
 
 input {

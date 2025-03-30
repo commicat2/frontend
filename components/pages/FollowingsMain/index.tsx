@@ -9,6 +9,7 @@ import MainContainer from 'components/common/MainContainer'
 import MainContainerButton from 'components/common/MainContainerButton'
 import MainContainerHeader from 'components/common/MainContainerHeader'
 import UserCards from 'components/common/cards/UserCards'
+import styles from './index.module.css'
 
 const FollowingsMain = ({ follower }: { follower: string }) => {
   const {
@@ -41,7 +42,7 @@ const FollowingsMain = ({ follower }: { follower: string }) => {
   })
 
   return (
-    <main>
+    <main className={styles.container}>
       {(!isLoading && !isFetchingNextPage) || <IsLoading />}
       <MainContainer>
         <MainContainerHeader>

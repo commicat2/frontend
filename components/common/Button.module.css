@@ -1,7 +1,7 @@
 .button {
   border-radius: 0.8rem;
   padding: 1.6rem 0;
-  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
+  background-color: var(--color-button);
   color: var(--color-white);
   text-align: center;
   font-size: 1.8rem;

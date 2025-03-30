@@ -1,33 +1,32 @@
 .form {
   position: relative;
+  height: 4.4rem;
 }
 
 .input {
   width: 100%;
-  border: 0;
-  border-radius: 1rem;
-  padding: 1.5rem;
-  padding-left: 4.2rem;
+  border-radius: 0.5rem;
+  padding: 1.2rem;
   color: var(--color-gray2);
-  background-color: var(--color-gray7);
-  outline-color: var(--color-black);
+  border: 0.1rem solid var(--color-primary);
+  font-size: 1.4rem;
+}
+
+.input::placeholder {
+  color: var(--color-gray5);
 }
 
 .icon {
   position: absolute;
-  top: 1.2rem;
-  left: 1.2rem;
-  width: 2.4rem;
-  height: 2.4rem;
+  top: 1.3rem;
+  right: 1.1rem;
+  width: 1.6rem;
+  height: 1.6rem;
 }
 
 @media screen and (max-width: 767px) {
   .input {
     padding: 1.3rem;
     font-size: 1.4rem;
-  }
-
-  .icon {
-    display: none;
   }
 }

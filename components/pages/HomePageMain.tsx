@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 import MainContainer from 'components/common/MainContainer'
@@ -69,7 +70,10 @@ const HomePageMain = ({
         </MainContainerHeader>
         {renderWorks()}
         <Link className={styles.seeMore} href={`works/?genre=${genre}${keyword ? `&keyword=${keyword}` : ''}`} prefetch={false}>
-          더보기
+          more
+          <div className={styles.plus}>
+            <Image fill sizes="100%" priority src="/plus.png" alt="See more" />
+          </div>
         </Link>
       </MainContainer>
       <MainContainer>
@@ -78,7 +82,10 @@ const HomePageMain = ({
         </MainContainerHeader>
         <CreatorCards creators={creators} />
         <Link className={styles.seeMore} href={`creators/${keyword ? `?keyword=${keyword}` : ''}`} prefetch={false}>
-          더보기
+          more
+          <div className={styles.plus}>
+            <Image fill sizes="100%" priority src="/plus.png" alt="See more" />
+          </div>
         </Link>
       </MainContainer>
       {!keyword && (
@@ -87,7 +94,12 @@ const HomePageMain = ({
             <p className={styles.headerText}>클라이언트</p>
           </MainContainerHeader>
           <UserCards users={users} />
-          <Link className={styles.seeMore} href="users/" prefetch={false}>더보기</Link>
+          <Link className={styles.seeMore} href="users/" prefetch={false}>
+            more
+            <div className={styles.plus}>
+              <Image fill sizes="100%" priority src="/plus.png" alt="See more" />
+            </div>
+          </Link>
         </MainContainer>
       )}
     </main>

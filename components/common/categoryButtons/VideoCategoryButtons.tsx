@@ -37,7 +37,7 @@ const VideoCategoryButtons = ({ category, handleCategoryClick }: { category: Cat
         disabled={category === 'Z'}
         onClick={() => { return handleCategoryClick('Z') }}
       >
-        기타(비디오)
+        기타
       </MainContainerSubButton>
     </MainContainerSubHeader>
   )

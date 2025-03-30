@@ -11,6 +11,7 @@
   border-radius: 1rem;
   padding: 2rem;
   background-color: var(--color-white);
+  border: 0.1rem solid var(--color-gray1);
   text-align: start;
   overflow: hidden;
 }

@@ -1,21 +1,39 @@
+.container {
+  margin-top: 4rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.6rem;
+}
+
 .headerText {
   color: var(--color-gray1);
+  font-size: 2rem;
   font-weight: 700;
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+  line-height: 2.8rem
 }
 
 .categoryContainer {
-  margin-top: 0.4rem;
+  margin-top: 1.2rem;
 }
 
-.seekRequest {
-  align-self: flex-end;
+.seekRequest{
+  display: flex;
+  align-items: center;
+  line-height: 2rem;
+}
+
+.checkBox {
+  accent-color: var(--color-button);
+  zoom: 1.5;
 }
 
 @media screen and (max-width: 767px) {
-  .headerText {
+  .badgeContainer>* {
     font-size: 1.4rem;
-    margin-bottom: 0.6rem;
+    line-height: 2rem;
   }
 }

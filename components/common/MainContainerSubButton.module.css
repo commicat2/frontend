@@ -1,16 +1,15 @@
 .button {
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 400;
+  color: var(--color-gray1);
 }
 
 .selected {
   text-decoration: underline;
-  color: var(--color-gray1);
+  text-decoration-thickness: 0.2rem;
+  text-underline-offset: 0.8rem;
 }
 
-.notSelected {
-  color: var(--color-gray4);
-}
 
 @media screen and (max-width: 767px) {
   .button {

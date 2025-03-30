@@ -7,7 +7,7 @@ const NoticeC = () => {
     <NoticeMainContainer>
       <div className={styles.content}>
         <p className={styles.headerText}>클라이언트 이용 가이드</p>
-        <hr />
+        <hr className={styles.hr} />
         <p>1. 회원가입 후, 우측 상단의 아이콘을 통해 설정 페이지로 이동해주세요.</p>
         <div className={styles.image}>
           <Image fill sizes="100%" priority src="/guide1.png" alt="Guide 1" />

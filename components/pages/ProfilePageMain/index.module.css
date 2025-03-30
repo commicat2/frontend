@@ -1,28 +1,29 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
   margin: 0 auto;
-  padding: 2rem 13rem;
-  max-width: 192rem;
+  padding: 0 2rem;
+  max-width: 132rem;
 }
 
 .content {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
-}
-
-@media screen and (max-width: 1199px) {
-  .container {
-    max-width: 104.8rem;
-    padding: 2rem 5.2rem;
-  }
+  border-radius: 1.6rem;
 }
 
 @media screen and (max-width: 767px) {
   .container {
+    gap: 0.8rem;
     margin: 0;
-    padding: 0 5.2rem;
+    padding: 0;
+    width: 100%;
+  }
+
+  .content {
+    gap: 0.8rem;
+    border-radius: 0;
   }
 }

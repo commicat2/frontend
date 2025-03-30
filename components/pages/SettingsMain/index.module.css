@@ -1,0 +1,19 @@
+.container {
+  width: 76rem;
+  margin: 0 auto;
+}
+
+.mainContainer {
+  gap: 0;
+  padding: 3.6rem;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+
+  .mainContainer {
+    padding: 2.4rem 1.6rem 1.6rem;
+  }
+}

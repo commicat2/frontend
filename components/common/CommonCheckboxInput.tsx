@@ -7,17 +7,19 @@ const CommonCheckboxInput = ({
   ...props
 }: CommonInputProps) => {
   return (
-    <div className={styles.container}>
+    <>
       <div className={styles.label}>{label}</div>
-      <input
-        className={styles.input}
-        type="checkbox"
-        id={name}
-        name={name}
-        {...props}
-      />
-      <span className={styles.comment}>{comment}</span>
-    </div>
+      <div className={styles.container}>
+        <input
+          className={styles.input}
+          type="checkbox"
+          id={name}
+          name={name}
+          {...props}
+        />
+        <span className={styles.comment}>{comment}</span>
+      </div>
+    </>
   )
 }
 

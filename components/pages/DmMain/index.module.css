@@ -2,9 +2,9 @@
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
-  max-width: 192rem;
+  max-width: 132rem;
   margin: 0 auto;
-  padding: 2rem 13rem;
+  padding: 0 2rem;
 }
 
 .rooms {
@@ -15,7 +15,7 @@
   width: 40rem;
   border-radius: 1rem;
   padding: 2rem 2.5rem;
-  background-color: var(--color-gray7);
+  background-color: var(--color-white);
 }
 
 .room {
@@ -24,7 +24,7 @@
   width: calc(100% - 42rem);
   border-radius: 1rem;
   padding: 2rem 2.5rem;
-  background-color: var(--color-gray7);
+  background-color: var(--color-white);
 }
 
 .headerText {
@@ -33,24 +33,19 @@
   font-weight: 700;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .container {
-    max-width: 104.8rem;
-    padding: 2rem 5.2rem;
+    margin: 0;
+    padding: 2rem 0 0;
   }
 
   .rooms {
     width: 100%;
+    border-radius: 0;
   }
 
   .room {
-    order: -1;
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .container {
-    margin: 0;
+    border-radius: 0;
   }
 }

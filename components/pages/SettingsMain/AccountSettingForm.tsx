@@ -82,7 +82,7 @@ const AccountSettingForm = ({
     return (
       <div className={styles.row}>
         <div className={styles.verified}><Image fill sizes="100%" src="/icon-not-verified.png" alt="Not Verified" /></div>
-        <button className={styles.settingButton} type="button" onClick={handleSendEmailVerification}>인증하기</button>
+        <button className={styles.verifyButton} type="button" onClick={handleSendEmailVerification}>인증하기</button>
       </div>
     )
   }
@@ -104,47 +104,48 @@ const AccountSettingForm = ({
               maxLength={100}
               disabled={accountSettings.auth_provider !== 'email'}
             />
+            <span>{renderEmailVerification()}</span>
           </div>
-          <span className={styles.comment}>{renderEmailVerification()}</span>
+          {!accountSettings.is_verified || (
+          <div className={styles.checkboxContainer}>
+            <input
+              className={styles.checkBox}
+              type="checkbox"
+              name="allow_send_email"
+              checked={accountInput.allow_send_email || false}
+              onChange={handleChange}
+              disabled={emailChanged}
+            />
+            <span className={styles.checkBoxComment}>작업/결제 관련 알림 메일로도 받기</span>
+          </div>
+          )}
         </div>
-        {!accountSettings.is_verified || (
-        <div className={styles.container}>
-          <input
-            className={styles.checkBox}
-            type="checkbox"
-            name="allow_send_email"
-            checked={accountInput.allow_send_email || false}
-            onChange={handleChange}
-            disabled={emailChanged}
-          />
-          <span className={styles.checkBoxComment}>작업/결제 관련 알림 메일로도 받기</span>
-        </div>
-        )}
         {accountSettings.auth_provider !== 'email' || (
           <div className={styles.container}>
             <div className={styles.label}>비밀번호</div>
-            <div className={styles.settingButton}>
-              <Link href="/forgot-password" target="_blank">비밀번호 변경하기</Link>
-            </div>
+            <Link className={styles.settingButton} href="/forgot-password" target="_blank">비밀번호 변경하기</Link>
           </div>
         )}
         {!accountSettings.is_creator && (
           <div className={styles.container}>
             <div className={styles.label}>크리에이터</div>
-            <button
-              className={!englishNickname || !accountSettings.is_verified ? styles.settingButtonDisabled : styles.settingButton}
-              type="button"
-              disabled={!englishNickname || !accountSettings.is_verified}
-              onClick={() => { setRegisterCreatorModalOpen(true) }}
-            >
-              크리에이터로 등록하기
-            </button>
-            {!englishNickname && <p className={styles.comment}>* 닉네임을 먼저 설정해주세요.</p>}
-            {(englishNickname && !accountSettings.is_verified) && <p className={styles.comment}>* 이메일 인증을 완료해주세요.</p>}
+            <div className={styles.row}>
+              <button
+                className={!englishNickname || !accountSettings.is_verified ? styles.settingButtonDisabled : styles.settingButton}
+                type="button"
+                disabled={!englishNickname || !accountSettings.is_verified}
+                onClick={() => { setRegisterCreatorModalOpen(true) }}
+              >
+                크리에이터로 등록하기
+              </button>
+              {!englishNickname && <p className={styles.comment}>* 닉네임을 먼저 설정해주세요.</p>}
+              {(englishNickname && !accountSettings.is_verified) && <p className={styles.comment}>* 이메일 인증을 완료해주세요.</p>}
+            </div>
           </div>
         )}
         <p className={styles.accountInfo}>계좌 정보는 클라이언트 입금, 환불 그리고 크리에이터 대금 지급 시 이용됩니다.</p>
         <CommonInput
+          className={styles.lowMarginTop}
           label="예금주명"
           name="bank_account_name"
           value={accountInput.bank_account_name || ''}
@@ -165,15 +166,15 @@ const AccountSettingForm = ({
           onChange={handleChange}
           maxLength={50}
         />
+        <span className={styles.error}>{validateError}</span>
+        <p className={styles.saveMessage}>{saveMessage}</p>
         <div className={styles.buttonContainer}>
-          <span className={styles.error}>{validateError}</span>
-          <p className={styles.saveMessage}>{saveMessage}</p>
+          <button className={`${styles.button} ${styles.resetButton}`} type="button" onClick={handleReset}>초기화</button>
           <button className={styles.button} type="button" onClick={handleSave}>저장</button>
-          <button className={styles.button} type="button" onClick={handleReset}>초기화</button>
         </div>
       </form>
       <div className={styles.disableAccount}>
-        <div className={styles.settingButton}>
+        <div className={styles.verifyButton}>
           <Link href="disable-account/" target="_blank">계정 비활성화</Link>
         </div>
       </div>

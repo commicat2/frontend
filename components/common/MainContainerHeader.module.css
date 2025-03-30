@@ -1,9 +1,10 @@
 .header {
   display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  padding: 1rem;
+  gap: 0.4rem;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 @media screen and (max-width: 767px) {

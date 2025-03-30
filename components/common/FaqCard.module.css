@@ -5,7 +5,7 @@
   margin: 0;
   border-radius: 1rem;
   padding: 2rem 2.5rem;
-  background-color: var(--color-gray6);
+  border: 0.1rem solid var(--color-gray1);
 }
 
 @media screen and (max-width: 767px) {

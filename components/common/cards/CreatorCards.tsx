@@ -36,10 +36,8 @@ const CreatorCards = ({ creators }: { creators: CreatorCard[] }) => {
                   alt="Profile"
                 />
               </div>
-              <div className={styles.texts}>
-                <p className={styles.nickname}>{creator.nickname}</p>
-                <p className={styles.intro}>{creator.intro}</p>
-              </div>
+              <p className={styles.nickname}>{creator.nickname}</p>
+              <p className={styles.intro}>{creator.intro}</p>
             </div>
           </Link>
         )

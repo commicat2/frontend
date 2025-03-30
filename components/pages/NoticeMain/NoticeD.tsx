@@ -7,7 +7,7 @@ const NoticeD = () => {
     <NoticeMainContainer>
       <div className={styles.content}>
         <p className={styles.headerText}>파트너 크리에이터 이벤트</p>
-        <hr />
+        <hr className={styles.hr} />
         <div className={styles.image} style={{ paddingBottom: '25%' }}>
           <Image fill sizes="100%" priority src="/partnerfee.png" alt="Partner Fee" />
         </div>

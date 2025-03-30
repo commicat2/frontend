@@ -216,7 +216,7 @@ const CreateRequestForm = ({
           name="copyrightTransfer"
           checked={requestInput.copyrightTransfer}
           onChange={handleCheckboxChange}
-          comment="* 저작재산권을 이관받습니다."
+          comment="저작재산권을 이관받습니다."
         />,
       )
     }
@@ -231,8 +231,8 @@ const CreateRequestForm = ({
           onChange={handleCheckboxChange}
           comment={
             !creatorProfile.allow_hidden_only
-              ? '* 외부에 공개되지 않습니다.'
-              : '* 외부에 공개되지 않는 요청만 허용됩니다.'
+              ? '외부에 공개되지 않습니다.'
+              : '외부에 공개되지 않는 요청만 허용됩니다.'
           }
         />,
       )
@@ -245,7 +245,7 @@ const CreateRequestForm = ({
           name="anonymous"
           checked={requestInput.anonymous}
           onChange={handleCheckboxChange}
-          comment="* 클라이언트가 공개되지 않습니다."
+          comment="클라이언트가 공개되지 않습니다."
         />,
       )
     }
@@ -343,7 +343,7 @@ const CreateRequestForm = ({
               className={styles.contentInput}
               id="content"
               ref={contentRef}
-              placeholder="요청 내용을 적어주세요. 파일 전달이 필요하다면 외부 링크를 활용해주세요."
+              placeholder={'요청 내용을 적어주세요.\n파일 전달이 필요하다면 외부 링크를 활용해주세요.'}
               maxLength={1000}
             />
           </div>

@@ -168,49 +168,53 @@ const ProfileSettingForm = ({ profileSettings, setProfileSettings, setRerenderNa
         />
         <div className={styles.container}>
           <div className={styles.label}>사진</div>
-          <div className={styles.picInput}>
-            <div onMouseEnter={() => { setEditPic(true) }} onMouseLeave={() => { setEditPic(false) }}>
-              {!editPic || (
+          <div className={styles.row}>
+            <div className={styles.picInput}>
+              <div onMouseEnter={() => { setEditPic(true) }} onMouseLeave={() => { setEditPic(false) }}>
+                {!editPic || (
                 <button className={styles.editPic} type="button" onClick={() => { handleEditClick(picRef.current) }}>
                   <Image fill sizes="100%" src="/edit.png" alt="Edit" />
                 </button>
-              )}
-              <input
-                id="profile_pic"
-                type="file"
-                style={{ display: 'none' }}
-                ref={picRef}
-                onChange={(e) => { handleUploadImage(e, 'pic') }}
-              />
-              <div className={styles.profilePicContainer}>
-                <Image fill sizes="100%" priority src={profileInput.profile_pic || '/default_profile_pic.jpg'} alt="Profile" />
+                )}
+                <input
+                  id="profile_pic"
+                  type="file"
+                  style={{ display: 'none' }}
+                  ref={picRef}
+                  onChange={(e) => { handleUploadImage(e, 'pic') }}
+                />
+                <div className={styles.profilePicContainer}>
+                  <Image fill sizes="100%" priority src={profileInput.profile_pic || '/default_profile_pic.jpg'} alt="Profile" />
+                </div>
               </div>
             </div>
+            {!profileInput.profile_pic || (
+              <button type="button" className={styles.deletePic} onClick={deletePicInput}>
+                <Image fill sizes="100%" src="/icon-delete.svg" alt="Delete" />
+              </button>
+            )}
           </div>
-          {!profileInput.profile_pic || (
-            <button type="button" className={styles.deletePic} onClick={deletePicInput}>
-              <Image fill sizes="100%" src="/icon-delete.svg" alt="Delete" />
-            </button>
-          )}
         </div>
         <div className={styles.container}>
           <div className={styles.label}>배경</div>
-          <div className={styles.bgInput}>
-            <div onMouseEnter={() => { setEditBg(true) }} onMouseLeave={() => { setEditBg(false) }}>
-              {!editBg || (
+          <div className={styles.row}>
+            <div className={styles.bgInput}>
+              <div onMouseEnter={() => { setEditBg(true) }} onMouseLeave={() => { setEditBg(false) }}>
+                {!editBg || (
                 <button className={styles.editBg} type="button" onClick={() => { handleEditClick(bgRef.current) }}>
                   <Image fill sizes="100%" src="/edit_bg.png" alt="Edit" />
                 </button>
-              )}
-              <input
-                id="profile_bg"
-                type="file"
-                style={{ display: 'none' }}
-                ref={bgRef}
-                onChange={(e) => { handleUploadImage(e, 'bg') }}
-              />
-              <div className={styles.profileBgContainer}>
-                <Image fill sizes="100%" priority src={profileInput?.profile_bg || '/default_profile_bg.jpg'} alt="Profile Background" />
+                )}
+                <input
+                  id="profile_bg"
+                  type="file"
+                  style={{ display: 'none' }}
+                  ref={bgRef}
+                  onChange={(e) => { handleUploadImage(e, 'bg') }}
+                />
+                <div className={styles.profileBgContainer}>
+                  <Image fill sizes="100%" priority src={profileInput?.profile_bg || '/default_profile_bg.jpg'} alt="Profile Background" />
+                </div>
               </div>
             </div>
             {!profileInput.profile_bg || (
@@ -234,7 +238,7 @@ const ProfileSettingForm = ({ profileSettings, setProfileSettings, setRerenderNa
           onChange={handleChange}
           maxLength={50}
         />
-        <div className={styles.container}>
+        <div className={styles.checkboxContainer}>
           <input
             className={styles.checkBox}
             type="checkbox"
@@ -245,11 +249,11 @@ const ProfileSettingForm = ({ profileSettings, setProfileSettings, setRerenderNa
           />
           <span className={styles.checkBoxComment}>프로필에 x 링크 보이기</span>
         </div>
+        <span className={styles.error}>{validateError}</span>
+        <p className={styles.saveMessage}>{saveMessage}</p>
         <div className={styles.buttonContainer}>
-          <span className={styles.error}>{validateError}</span>
-          <p className={styles.saveMessage}>{saveMessage}</p>
+          <button className={`${styles.button} ${styles.resetButton}`} type="button" disabled={!!isPending} onClick={handleReset}>초기화</button>
           <button className={styles.button} type="submit" disabled={!!isPending}>저장</button>
-          <button className={styles.button} type="button" disabled={!!isPending} onClick={handleReset}>초기화</button>
         </div>
       </form>
       {!isFileUploading || (

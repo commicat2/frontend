@@ -51,7 +51,7 @@ const TextCategoryButtons = ({ category, handleCategoryClick }: { category: Cate
         disabled={category === 'Z'}
         onClick={() => { return handleCategoryClick('Z') }}
       >
-        기타(텍스트)
+        기타
       </MainContainerSubButton>
     </MainContainerSubHeader>
   )

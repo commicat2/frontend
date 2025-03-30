@@ -6,7 +6,6 @@ import { useGetCreators } from 'lib/api/queryHooks'
 import useInfiniteScroll from 'lib/hooks/useInfiniteScroll'
 import { createQueryString } from 'lib/utils/common'
 import IsLoading from 'components/common/IsLoading'
-import Badge from 'components/common/Badge'
 import MainContainer from 'components/common/MainContainer'
 import MainContainerButton from 'components/common/MainContainerButton'
 import MainContainerHeader from 'components/common/MainContainerHeader'
@@ -28,8 +27,9 @@ const CreatorsMain = ({
   })
   const router = useRouter()
   const [creators, setCreators] = useState<CreatorCard[]>([])
+  const [isChecked, setIsChecked] = useState(false)
 
-  useEffect(() => { refetch() }, [refetch])
+  useEffect(() => { refetch(); if (seek_request) setIsChecked(true) }, [refetch, seek_request])
 
   useEffect(() => {
     if (data?.pages) {
@@ -48,8 +48,9 @@ const CreatorsMain = ({
       genre, category: selectedCategory, keyword, seek_request,
     })}`)
   }
-  const handleSeekRequestClick = (e: React.MouseEvent) => {
+  const handleSeekRequestClick = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault()
+    setIsChecked(e.target.checked)
     router.push(`/creators?${createQueryString({
       genre, category, keyword, seek_request: seek_request ? '' : 'true',
     })}`)
@@ -77,10 +78,24 @@ const CreatorsMain = ({
   }
 
   return (
-    <main>
+    <main className={styles.container}>
       {(isLoading || isFetchingNextPage) && <IsLoading />}
       <MainContainer>
-        <p className={styles.headerText}>크리에이터</p>
+        <div className={styles.header}>
+          <p className={styles.headerText}>크리에이터</p>
+          <div className={styles.seekRequest}>
+            <input
+              className={styles.checkBox}
+              type="checkbox"
+              name="checkbox"
+              checked={isChecked}
+              onChange={handleSeekRequestClick}
+            />
+            <span className={styles.seekRequestText}>
+              모집중인 크리에이터만 보기
+            </span>
+          </div>
+        </div>
         <MainContainerHeader>
           <MainContainerButton
             selected={genre === 'all'}
@@ -126,11 +141,6 @@ const CreatorsMain = ({
           </MainContainerButton>
         </MainContainerHeader>
         <div className={styles.categoryContainer}>{renderCategoryButtons()}</div>
-        <div className={styles.seekRequest}>
-          <button type="button" aria-label="모집중" onClick={handleSeekRequestClick}>
-            {seek_request ? <Badge option="seekRequest" /> : <Badge option="seekRequestButton" />}
-          </button>
-        </div>
         <CreatorCards creators={creators} />
       </MainContainer>
     </main>

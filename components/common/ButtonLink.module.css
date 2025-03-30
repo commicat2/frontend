@@ -1,7 +1,7 @@
 .button {
   border-radius: 0.8rem;
   padding: 1.6rem 0;
-  background-color: var(--color-primary);
+  background-color: var(--color-button);
   color: var(--color-white);
   font-size: 1.8rem;
   font-weight: 700;

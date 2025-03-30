@@ -2,14 +2,16 @@
   display: inline-block;
   max-width: max-content;
   text-align: center;
-  font-size: 1.4rem;
-  padding: 0.4rem 0.6rem;
-  border-radius: 0.5rem;
-  color: var(--color-white)
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.4rem;
+  color: var(--color-white);
+  line-height: 2.4rem;
 }
 
 .seekRequest {
-  background-color: var(--color-red);
+  background-color: var(--color-button);
 }
 
 .seekRequestButton {
@@ -21,7 +23,7 @@
 }
 
 .copyrightTransfer {
-  background-color: var(--color-gray4);
+  background-color: var(--color-blue);
 }
 
 .hidden {
@@ -41,27 +43,27 @@
 }
 
 .image {
-  background-color: var(--color-blue-light);
+  background-color: var(--color-purple);
 }
 
 .audio {
-  background-color: var(--color-blue-light);
+  background-color: var(--color-purple);
 }
 
 .video {
-  background-color: var(--color-blue-light);
+  background-color: var(--color-purple);
 }
 
 .text {
-  background-color: var(--color-blue-light);
+  background-color: var(--color-purple);
 }
 
 .other {
-  background-color: var(--color-blue-light);
+  background-color: var(--color-purple);
 }
 
 .detail {
-  background-color: var(--color-blue-light);
+  background-color: var(--color-purple);
 }
 
 .accept {

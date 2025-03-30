@@ -1,15 +1,17 @@
 .button {
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--color-white);
+  border-radius: 10rem;
+  padding: 0.8rem 1.6rem;
 }
 
 .selected {
-  color: var(--color-gray1);
-  text-decoration: underline;
+  background-color: var(--color-button);
 }
 
 .notSelected {
-  color: var(--color-gray4);
+  background-color: var(--color-button-not-selected);
 }
 
 @media screen and (max-width: 767px) {

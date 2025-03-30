@@ -9,7 +9,6 @@ const SearchBar = () => {
   const router = useRouter()
   const searchParams = useSearchParams()
   const [keyword, setKeyword] = useState('')
-  const [isFocus, setIsFocus] = useState(false)
 
   useLayoutEffect(() => { setKeyword(searchParams.get('keyword') || '') }, [searchParams])
 
@@ -23,22 +22,16 @@ const SearchBar = () => {
     <form className={styles.form} onSubmit={handleSubmit}>
       <input
         className={styles.input}
-        type="search"
+        type="text"
         id="keyword"
         aria-label="keyword"
         placeholder="크리에이터, 태그 검색"
         value={keyword}
-        onFocus={() => { setIsFocus(true) }}
-        onBlur={() => { setIsFocus(false) }}
         onChange={(e) => { setKeyword(e.target.value) }}
         maxLength={25}
       />
       <button className={styles.icon} type="submit">
-        {!isFocus ? (
-          <Image fill sizes="100%" src="/icon-search.png" alt="Search" />
-        ) : (
-          <Image fill sizes="100%" src="/icon-search2.png" alt="Search" />
-        )}
+        <Image fill sizes="100%" src="/icon-search.png" alt="Search" />
       </button>
     </form>
   )

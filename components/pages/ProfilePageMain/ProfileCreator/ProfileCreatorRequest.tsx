@@ -39,30 +39,25 @@ const ProfileCreatorRequest = ({
     <div className={styles.container}>
       <div className={styles.info}>
         <div className={styles.row}>
-          <p>최소 금액:</p>
+          <p>최소 금액</p>
           <p>{`${formatNumber(min_amount)}원`}</p>
         </div>
-        <hr className={styles.hr} />
         <div className={styles.row}>
-          <p>평균 응답일:</p>
+          <p>평균 응답일</p>
           <p>{`${averageResponseDays ? formatNumber(averageResponseDays) : '- '}일`}</p>
         </div>
-        <hr className={styles.hr} />
         <div className={styles.row}>
-          <p>평균 작업 완료일:</p>
+          <p>평균 작업 완료일</p>
           <p>{`${averageCompleteDays ? formatNumber(averageCompleteDays) : '- '}일`}</p>
         </div>
-        <hr className={styles.hr} />
         <div className={styles.row}>
-          <p>응답 기한:</p>
+          <p>응답 기한</p>
           <p>{`${formatNumber(response_expiration_days)}일`}</p>
         </div>
-        <hr className={styles.hr} />
         <div className={styles.row}>
-          <p>작업 완료 기한:</p>
+          <p>작업 완료 기한</p>
           <p>{`${formatNumber(complete_expiration_days)}일`}</p>
         </div>
-        <hr className={styles.hr} />
         <div className={styles.row}>
           <p>작업 완료율:</p>
           <p>{`${completeRate !== null ? completeRate?.toFixed(0) : '- '}%`}</p>

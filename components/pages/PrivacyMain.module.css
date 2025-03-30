@@ -2,19 +2,30 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 192rem;
+  max-width: 132rem;
   margin: 0 auto;
-  padding: 2rem 13rem;
+  padding: 0 2rem;
 }
 
 .content {
-  border-radius: 0.5rem;
-  margin: 2.5rem 0 6rem;
-  padding: 2rem;
+  border-radius: 1.6rem;
+  padding: 3.6rem;
   line-height: 200%;
   background-color: var(--color-white);
 }
 
 .content p {
   white-space: pre-wrap;
+}
+
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 2.4rem 0 0;
+  }
+  
+  .content {
+    border-radius: 0;
+  }
 }

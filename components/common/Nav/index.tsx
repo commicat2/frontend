@@ -50,10 +50,12 @@ const Nav = ({ rerenderNav, setRerenderNav }: { rerenderNav?: boolean, setRerend
   }, [])
 
   return (
-    <nav className={styles.nav}>
-      <div className={styles.left}>
+    <nav className={styles.navContainer}>
+      <div className={styles.nav}>
         <NavLogo />
+        {(!isNotAuthenticated && !isAuthenticated) || <div className={styles.searchBar}><SearchBar /></div>}
         {!isAuthenticated || (
+        <div className={styles.iconContainer}>
           <NavIconContainer
             hasUnreadNotification={hasUnreadNotification}
             setHasUnreadNotification={setHasUnreadNotification}
@@ -62,10 +64,9 @@ const Nav = ({ rerenderNav, setRerenderNav }: { rerenderNav?: boolean, setRerend
             hasUnreadDm={hasUnreadDm}
             setHasUnreadDm={setHasUnreadDm}
           />
+        </div>
         )}
-      </div>
-      {(!isNotAuthenticated && !isAuthenticated) || <div className={styles.searchBar}><SearchBar /></div>}
-      {!isAuthenticated || (
+        {!isAuthenticated || (
         <NavUserProfile
           profilePic={profilePic}
           englishNickname={englishNickname}
@@ -73,8 +74,9 @@ const Nav = ({ rerenderNav, setRerenderNav }: { rerenderNav?: boolean, setRerend
           setOpenMenus={setOpenMenus}
           handleLogout={handleLogout}
         />
-      )}
-      {!isNotAuthenticated || <ButtonLink className={styles.styledButtonLink} href="/sign-in">로그인</ButtonLink>}
+        )}
+        {!isNotAuthenticated || <ButtonLink className={styles.styledButtonLink} href="/sign-in">로그인</ButtonLink>}
+      </div>
     </nav>
   )
 }

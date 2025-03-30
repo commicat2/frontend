@@ -30,7 +30,7 @@ const UsersMain = () => {
   })
 
   return (
-    <main>
+    <main className={styles.container}>
       {(!isLoading && !isFetchingNextPage) || <IsLoading />}
       <MainContainer>
         <MainContainerHeader>

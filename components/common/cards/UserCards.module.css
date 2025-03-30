@@ -12,12 +12,13 @@
   gap: 1rem;
   width: 19.5rem;
   height: 8rem;
+  border: 0.1rem solid var(--color-gray12);
   border-radius: 1rem;
   padding: 1rem;
 }
 
 .card:hover {
-  background-color: var(--color-gray8);
+  background-color: var(--color-gray12);
 }
 
 .profilePic {
@@ -50,8 +51,16 @@
   font-size: 1.4rem;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
   .card {
-    margin: 0 auto;
+    width: 15.6rem;
+  }
+
+  .nickname {
+    max-width: 7rem;
+  }
+
+  .englishNickname {
+    max-width: 7rem;
   }
 }

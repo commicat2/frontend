@@ -23,14 +23,14 @@ const ImageCategoryButtons = ({ category, handleCategoryClick }: { category: Cat
         disabled={category === '2'}
         onClick={() => { return handleCategoryClick('2') }}
       >
-        2D 버츄얼
+        버츄얼2D
       </MainContainerSubButton>
       <MainContainerSubButton
         selected={category === '3'}
         disabled={category === '3'}
         onClick={() => { return handleCategoryClick('3') }}
       >
-        3D 버츄얼
+        버츄얼3D
       </MainContainerSubButton>
       <MainContainerSubButton
         selected={category === '4'}
@@ -100,7 +100,7 @@ const ImageCategoryButtons = ({ category, handleCategoryClick }: { category: Cat
         disabled={category === 'Z'}
         onClick={() => { return handleCategoryClick('Z') }}
       >
-        기타(이미지)
+        기타
       </MainContainerSubButton>
     </MainContainerSubHeader>
   )

@@ -1,14 +1,12 @@
 .iconContainer {
   display: flex;
-  gap: 1.8rem;
-  margin-left: 1rem;
+  gap: 1.6rem;
 }
 
 .link {
   position: relative;
   width: 2.4rem;
   height: 2.4rem;
-  top: 0.3rem;
 }
 
 .icon {
@@ -18,12 +16,11 @@
 
 @media screen and (max-width: 767px) {
   .iconContainer {
-    gap: 1.5rem;
-    margin-left: 0;
+    gap: 1.2rem;
   }
 
   .link {
-    width: 2rem;
-    height: 2rem;
+    width: 1.6rem;
+    height: 1.6rem;
   }
 }

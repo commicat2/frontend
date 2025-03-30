@@ -1,10 +1,11 @@
 .info {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
-  padding: 1rem;
+  gap: 1.2rem;
   color: var(--color-gray1);
   font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.8rem;
 }
 
 .row {
@@ -12,14 +13,8 @@
 }
 
 .row>p:first-child {
-  text-align: end;
-  width: 12rem;
-  margin-right: 2rem;
-}
-
-.hr {
-  margin: 0.5rem 0;
-  border-top: 1px solid var(--color-gray5);
+  width: 12.6rem;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 767px) {

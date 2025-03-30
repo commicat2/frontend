@@ -1,23 +1,13 @@
 .logo {
   display: block;
   position: relative;
-  width: 20rem;
-  height: 3.6rem;
-}
-
-.smallLogo {
-  display: none;
-  position: relative;
-  width: 3.6rem;
+  width: 19rem;
   height: 3.6rem;
 }
 
 @media screen and (max-width: 767px) {
   .logo {
-    display: none;
-  }
-
-  .smallLogo {
-    display: block;
+    width: 12.7rem;
+    height: 2.4rem;
   }
 }

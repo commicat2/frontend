@@ -8,8 +8,10 @@
 .card {
   border-radius: 0.5rem;
   padding: 1.6rem;
-  background-color: var(--color-gray6);
+  background-color: var(--color-white);
   color: var(--color-gray1);
+  border: 0.1rem solid var(--color-gray12);
+  border-radius: 1rem;
   font-size: 1.7rem;
   font-weight: 600;
 }

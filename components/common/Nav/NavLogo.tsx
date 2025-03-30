@@ -8,9 +8,6 @@ const NavLogo = () => {
       <div className={styles.logo}>
         <Image fill sizes="100%" priority src="/logo.png" alt="Commicat Logo" />
       </div>
-      <div className={styles.smallLogo}>
-        <Image fill sizes="100%" priority src="/logo_symbol.png" alt="Commicat Logo" />
-      </div>
     </Link>
   )
 }

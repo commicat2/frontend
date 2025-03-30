@@ -25,6 +25,16 @@
   object-fit: contain;
 }
 
+.hr {
+  position: relative;
+  width: 128rem;
+  height: 0.8rem;
+  right: 2.4rem;
+  border: none;
+  background-color: var(--color-background);
+  margin: 1.6rem 0;
+}
+
 @media screen and (max-width: 767px) {
   .content {
     line-height: 1.5;
@@ -38,5 +48,11 @@
 
   .comment {
     font-size: 1.1rem;
-}
+  }
+
+  .hr {
+    margin-top: 1.6rem;
+    width: calc(100% + 3.2rem);
+    right: 1.6rem;
+  }
 }

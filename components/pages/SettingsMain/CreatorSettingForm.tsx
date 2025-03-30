@@ -196,18 +196,17 @@ const CreatorSettingForm = ({
     <form className={styles.form}>
       {!isPending || <IsLoading />}
       <div className={styles.fee}>
-        <p className={styles.feeLabel}>
-          <span className={styles.hide}>{'중개 '}</span>
-          {`수수료: ${Number(creatorSettings.fee).toFixed(1)}%`}
+        <p>
+          {`중개 수수료: ${Number(creatorSettings.fee).toFixed(1)}%`}
         </p>
         <div className={styles.commentContainer}>
           {!creatorSettings.is_partner && !creatorSettings.x_ad && (
             <p className={styles.comment}>
-              * 하단의 수수료 혜택 체크시 5.0%의 수수료로 이용하실 수 있습니다.
+              하단의 수수료 혜택 체크시 5.0%의 수수료로 이용하실 수 있습니다.
             </p>
           )}
           <p className={styles.comment}>
-            * 작업 완료 시점과 관계 없이, 요청 당시의 중개 수수료가 적용됩니다.
+            작업 완료 시점과 관계 없이, 요청 당시의 중개 수수료가 적용됩니다.
           </p>
         </div>
       </div>
@@ -218,28 +217,28 @@ const CreatorSettingForm = ({
         checked={creatorInput.x_ad}
         disabled={!xLink}
         onChange={handleChange}
-        comment={(!xLink) ? '* 프로필에 X 링크를 등록해야합니다.' : `* X 자기소개에 (commicat.com/@${englishNickname})를 입력 후 체크해주세요.`}
+        comment={(!xLink) ? '프로필에 X 링크를 등록해야합니다.' : `X 자기소개에 (commicat.com/@${englishNickname})를 입력 후 체크해주세요.`}
       />
       <CommonCheckboxInput
         label="요청 모집"
         name="seek_request"
         checked={creatorInput.seek_request}
         onChange={handleChange}
-        comment="* 요청을 모집할 수 있습니다."
+        comment="요청을 모집할 수 있습니다."
       />
       <CommonCheckboxInput
         label="외주 허용"
         name="allow_copyright_transfer"
         checked={creatorInput.allow_copyright_transfer}
         onChange={handleChange}
-        comment="* 저작재산권을 이관하는 외주 요청을 허용합니다."
+        comment="저작재산권을 이관하는 외주 요청을 허용합니다."
       />
       <CommonCheckboxInput
         label="비공개 허용"
         name="allow_hidden"
         checked={creatorInput.allow_hidden}
         onChange={handleChange}
-        comment="* 외부에 공개되지 않는 비공개 요청을 허용합니다."
+        comment="외부에 공개되지 않는 비공개 요청을 허용합니다."
       />
       {!creatorInput.allow_hidden || (
         <CommonCheckboxInput
@@ -247,7 +246,7 @@ const CreatorSettingForm = ({
           name="allow_hidden_only"
           checked={creatorInput.allow_hidden_only}
           onChange={handleChange}
-          comment="* 비공개 요청만 허용합니다."
+          comment="비공개 요청만 허용합니다."
         />
       )}
       <CommonCheckboxInput
@@ -255,10 +254,10 @@ const CreatorSettingForm = ({
         name="allow_anonymous"
         checked={creatorInput.allow_anonymous}
         onChange={handleChange}
-        comment="* 클라이언트가 공개되지 않는 익명 요청을 허용합니다."
+        comment="클라이언트가 공개되지 않는 익명 요청을 허용합니다."
       />
+      <div className={styles.label}>DM 허용</div>
       <div className={styles.container}>
-        <div className={styles.label}>DM 허용</div>
         <div className={styles.inputContainer}>
           <Select
             className={styles.select}
@@ -271,12 +270,12 @@ const CreatorSettingForm = ({
       </div>
       <div className={styles.container}>
         <div className={styles.label}>포트폴리오</div>
-        <Link className={styles.link} target="_blank" href="/edit-portfolio" prefetch={false}>
+        <Link className={styles.settingButton} target="_blank" href="/edit-portfolio" prefetch={false}>
           {!creatorSettings.portfolio ? '작성(선택 사항)' : '수정'}
         </Link>
       </div>
       <hr className={styles.hr} />
-      <p className={styles.genreLabel}>이미지</p>
+      <p className={styles.label}>이미지</p>
       <Select
         className={styles.select}
         isMulti
@@ -294,7 +293,7 @@ const CreatorSettingForm = ({
             onFocus={handleFocus}
             onBlur={handleBlur}
             onChange={handleChange}
-            comment="* 요청의 최소 금액입니다. (10,000원 이상)"
+            comment="요청의 최소 금액입니다. (10,000원 이상)"
           />
           <CommonInput
             label="응답 기한"
@@ -303,7 +302,7 @@ const CreatorSettingForm = ({
             onFocus={handleFocus}
             onBlur={handleBlur}
             onChange={handleChange}
-            comment="* 요청의 승인/거절 응답 기한입니다."
+            comment="요청의 승인/거절 응답 기한입니다."
           />
           <CommonInput
             label="작업 완료 기한"
@@ -312,12 +311,12 @@ const CreatorSettingForm = ({
             onFocus={handleFocus}
             onBlur={handleBlur}
             onChange={handleChange}
-            comment={'* 작업 요청을 완료할 수 있는 최대 일 수입니다.\n* 요청의 결제 완료 시점부터 계산되며 기한을 넘기면 요청은 자동으로 취소됩니다.'}
+            comment={'작업 요청을 완료할 수 있는 최대 일 수입니다.\n요청의 결제 완료 시점부터 계산되며 기한을 넘기면 요청은 자동으로 취소됩니다.'}
           />
         </>
       )}
       <hr className={styles.hr} />
-      <p className={styles.genreLabel}>오디오</p>
+      <p className={styles.label}>오디오</p>
       <Select
         className={styles.select}
         isMulti
@@ -335,7 +334,7 @@ const CreatorSettingForm = ({
             onFocus={handleFocus}
             onBlur={handleBlur}
             onChange={handleChange}
-            comment="* 요청의 최소 금액입니다. (10,000원 이상)"
+            comment="요청의 최소 금액입니다. (10,000원 이상)"
           />
           <CommonInput
             label="응답 기한"
@@ -344,7 +343,7 @@ const CreatorSettingForm = ({
             onFocus={handleFocus}
             onBlur={handleBlur}
             onChange={handleChange}
-            comment="* 요청의 승인/거절 응답 기한입니다."
+            comment="요청의 승인/거절 응답 기한입니다."
           />
           <CommonInput
             label="작업 완료 기한"
@@ -353,12 +352,12 @@ const CreatorSettingForm = ({
             onFocus={handleFocus}
             onBlur={handleBlur}
             onChange={handleChange}
-            comment={'* 작업 요청을 완료할 수 있는 최대 일 수입니다.\n* 요청의 결제 완료 시점부터 계산되며 기한을 넘기면 요청은 자동으로 취소됩니다.'}
+            comment={'작업 요청을 완료할 수 있는 최대 일 수입니다.\n요청의 결제 완료 시점부터 계산되며 기한을 넘기면 요청은 자동으로 취소됩니다.'}
           />
         </>
       )}
       <hr className={styles.hr} />
-      <p className={styles.genreLabel}>비디오</p>
+      <p className={styles.label}>비디오</p>
       <Select
         className={styles.select}
         isMulti
@@ -376,7 +375,7 @@ const CreatorSettingForm = ({
             onFocus={handleFocus}
             onBlur={handleBlur}
             onChange={handleChange}
-            comment="* 요청의 최소 금액입니다. (10,000원 이상)"
+            comment="요청의 최소 금액입니다. (10,000원 이상)"
           />
           <CommonInput
             label="응답 기한"
@@ -385,7 +384,7 @@ const CreatorSettingForm = ({
             onFocus={handleFocus}
             onBlur={handleBlur}
             onChange={handleChange}
-            comment="* 요청의 승인/거절 응답 기한입니다."
+            comment="요청의 승인/거절 응답 기한입니다."
           />
           <CommonInput
             label="작업 완료 기한"
@@ -394,12 +393,12 @@ const CreatorSettingForm = ({
             onFocus={handleFocus}
             onBlur={handleBlur}
             onChange={handleChange}
-            comment={'* 작업 요청을 완료할 수 있는 최대 일 수입니다.\n* 요청의 결제 완료 시점부터 계산되며 기한을 넘기면 요청은 자동으로 취소됩니다.'}
+            comment={'작업 요청을 완료할 수 있는 최대 일 수입니다.\n요청의 결제 완료 시점부터 계산되며 기한을 넘기면 요청은 자동으로 취소됩니다.'}
           />
         </>
       )}
       <hr className={styles.hr} />
-      <p className={styles.genreLabel}>텍스트</p>
+      <p className={styles.label}>텍스트</p>
       <Select
         className={styles.select}
         isMulti
@@ -417,7 +416,7 @@ const CreatorSettingForm = ({
             onFocus={handleFocus}
             onBlur={handleBlur}
             onChange={handleChange}
-            comment="* 요청의 최소 금액입니다. (10,000원 이상)"
+            comment="요청의 최소 금액입니다. (10,000원 이상)"
           />
           <CommonInput
             label="응답 기한"
@@ -426,7 +425,7 @@ const CreatorSettingForm = ({
             onFocus={handleFocus}
             onBlur={handleBlur}
             onChange={handleChange}
-            comment="* 요청의 승인/거절 응답 기한입니다."
+            comment="요청의 승인/거절 응답 기한입니다."
           />
           <CommonInput
             label="작업 완료 기한"
@@ -435,12 +434,12 @@ const CreatorSettingForm = ({
             onFocus={handleFocus}
             onBlur={handleBlur}
             onChange={handleChange}
-            comment={'* 작업 요청을 완료할 수 있는 최대 일 수입니다.\n* 요청의 결제 완료 시점부터 계산되며 기한을 넘기면 요청은 자동으로 취소됩니다.'}
+            comment={'작업 요청을 완료할 수 있는 최대 일 수입니다.\n요청의 결제 완료 시점부터 계산되며 기한을 넘기면 요청은 자동으로 취소됩니다.'}
           />
         </>
       )}
       <hr className={styles.hr} />
-      <p className={styles.genreLabel}>기타</p>
+      <p className={styles.label}>기타</p>
       <Select
         className={styles.select}
         isMulti
@@ -458,7 +457,7 @@ const CreatorSettingForm = ({
             onFocus={handleFocus}
             onBlur={handleBlur}
             onChange={handleChange}
-            comment="* 요청의 최소 금액입니다. (10,000원 이상)"
+            comment="요청의 최소 금액입니다. (10,000원 이상)"
           />
           <CommonInput
             label="응답 기한"
@@ -467,7 +466,7 @@ const CreatorSettingForm = ({
             onFocus={handleFocus}
             onBlur={handleBlur}
             onChange={handleChange}
-            comment="* 요청의 승인/거절 응답 기한입니다."
+            comment="요청의 승인/거절 응답 기한입니다."
           />
           <CommonInput
             label="작업 완료 기한"
@@ -476,15 +475,15 @@ const CreatorSettingForm = ({
             onFocus={handleFocus}
             onBlur={handleBlur}
             onChange={handleChange}
-            comment={'* 작업 요청을 완료할 수 있는 최대 일 수입니다.\n* 요청의 결제 완료 시점부터 계산되며 기한을 넘기면 요청은 자동으로 취소됩니다.'}
+            comment={'작업 요청을 완료할 수 있는 최대 일 수입니다.\n요청의 결제 완료 시점부터 계산되며 기한을 넘기면 요청은 자동으로 취소됩니다.'}
           />
         </>
       )}
+      <span className={styles.error}>{validateError}</span>
+      <p className={styles.saveMessage}>{saveMessage}</p>
       <div className={styles.buttonContainer}>
-        <span className={styles.error}>{validateError}</span>
-        <p className={styles.saveMessage}>{saveMessage}</p>
+        <button className={`${styles.button} ${styles.resetButton}`} type="button" disabled={!!isPending} onClick={handleReset}>초기화</button>
         <button className={styles.button} type="button" disabled={!!isPending} onClick={handleSubmit}>저장</button>
-        <button className={styles.button} type="button" disabled={!!isPending} onClick={handleReset}>초기화</button>
       </div>
     </form>
   )

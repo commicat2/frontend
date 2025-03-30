@@ -8,11 +8,11 @@
 }
 
 .card:hover {
-  background-color: var(--color-gray5);
+  background-color: var(--color-gray9);
 }
 
 .selected {
-  background-color: var(--color-gray5);
+  background-color: var(--color-gray9);
 }
 
 .profilePic {
@@ -21,7 +21,11 @@
   height: 7.5rem;
   border-radius: 50%;
   overflow: hidden;
+  border: 0.1rem solid var(--color-gray11);
+  border-radius: 50%;
   background-color: var(--color-white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  overflow: hidden;
 }
 
 .right {

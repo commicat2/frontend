@@ -11,6 +11,7 @@ import MainContainerButton from 'components/common/MainContainerButton'
 import ProfileSettingForm from './ProfileSettingForm'
 import AccountSettingForm from './AccountSettingForm'
 import CreatorSettingForm from './CreatorSettingForm'
+import styles from './index.module.css'
 
 const SettingsMain = () => {
   const { refetch, isError } = useGetUserSettings()
@@ -75,8 +76,8 @@ const SettingsMain = () => {
   return (
     <>
       <Nav rerenderNav={rerenderNav} setRerenderNav={setRerenderNav} />
-      <main>
-        <MainContainer>
+      <main className={styles.container}>
+        <MainContainer className={styles.mainContainer}>
           <MainContainerHeader>
             <MainContainerButton
               selected={option === 'profile'}

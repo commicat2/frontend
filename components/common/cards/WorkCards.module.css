@@ -1,25 +1,25 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: 1.6rem;
+  margin-top: 1.4rem;
 }
 
 .card {
   display: flex;
   position: relative;
-  width: 20rem;
-  height: 20rem;
+  width: 19rem;
+  height: 19rem;
   border: 0.1rem solid var(--color-gray5);
-  border-radius: 0.5rem;
+  border-radius: 1.2rem;
   overflow: hidden;
   background-color: var(--color-gray10);
 }
 
 .thumbnail {
   position: relative;
-  width: 20rem;
-  height: 20rem;
+  width: 19rem;
+  height: 19rem;
 }
 
 .audio {
@@ -46,8 +46,14 @@
   padding: 0.5rem;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
   .card {
-    margin: 0 auto;
+    width: 15.6rem;
+    height: 15.6rem;
+  }
+
+  .thumbnail {
+    width: 15.6rem;
+    height: 15.6rem;
   }
 }

@@ -5,6 +5,9 @@ import styles from './HomePageHeader.module.css'
 const HomePageHeader = () => {
   return (
     <header className={styles.header}>
+      <Link className={styles.banner} href="/notice/4">
+        <Image fill sizes="100%" src="/partner-banner.png" alt="Partner Banner" />
+      </Link>
       <div className={styles.content}>
         <p className={styles.headerText}>공지사항</p>
         <Link className={styles.link} href="/notice/1">
@@ -17,11 +20,6 @@ const HomePageHeader = () => {
           클라이언트 이용 가이드
         </Link>
       </div>
-      <Link href="/notice/4">
-        <div className={styles.banner}>
-          <Image fill sizes="100%" src="/partner-banner.png" alt="Partner Banner" />
-        </div>
-      </Link>
     </header>
   )
 }

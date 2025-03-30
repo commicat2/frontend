@@ -51,7 +51,7 @@ const AudioCategoryButtons = ({ category, handleCategoryClick }: { category: Cat
         disabled={category === 'Z'}
         onClick={() => { return handleCategoryClick('Z') }}
       >
-        기타(오디오)
+        기타
       </MainContainerSubButton>
     </MainContainerSubHeader>
   )

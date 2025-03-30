@@ -1,10 +1,12 @@
 .profilePic {
   position: relative;
-  width: 5rem;
-  height: 5rem;
+  width: 4.8rem;
+  height: 4.8rem;
+  border: 0.1rem solid var(--color-gray11);
   border-radius: 50%;
-  background-color: var(--color-white);
   overflow: hidden;
+  background-color: var(--color-white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .top {
@@ -27,14 +29,14 @@
 }
 
 .nickname {
-  color: var(--color-gray4);
+  color: var(--color-gray3);
 }
 
 .nicknameHover {
-  color: var(--color-gray4);
+  color: var(--color-gray3);
 }
 
 .nicknameHover:hover {
-  color: var(--color-gray1);
+  color: var(--color-black);
   text-decoration: underline;
 }
