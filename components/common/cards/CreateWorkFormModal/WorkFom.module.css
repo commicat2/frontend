@@ -4,7 +4,7 @@
 }
 
 .error {
-  margin-bottom: 2rem;
+  margin-bottom: 1.6rem;
   color: var(--color-red);
   font-size: 1.4rem;
 }
@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   gap: 0.6rem;
+  margin-top: 0.6rem;
 }
 
 .right {
@@ -32,7 +33,7 @@
 }
 
 .comment {
-  color: var(--color-gray3);
+  color: var(--color-gray14);
   font-size: 1.6rem;
   white-space: pre-line;
 }

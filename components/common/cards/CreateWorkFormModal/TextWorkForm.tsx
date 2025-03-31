@@ -43,8 +43,8 @@ const TextWorkForm = ({ setFormData, isHidden }: { setFormData: SetState<CreateW
   return (
     <div className={styles.container}>
       <p className={styles.error}>{validateError}</p>
-      <p className={`${styles.comment} ${styles.first}`}>* 클라이언트에게 전달할 결과물을 업로드해주세요.</p>
-      <p className={styles.comment}>* 파일이 4개 이상이거나 용량이 너무 클 경우 압축 파일(zip)을 업로드해주세요.</p>
+      <p className={`${styles.comment} ${styles.first}`}>클라이언트에게 전달할 결과물을 업로드해주세요.</p>
+      <p className={styles.comment}>파일이 4개 이상이거나 용량이 너무 클 경우 압축 파일(zip)을 업로드해주세요.</p>
       <div className={styles.row}>
         <p>파일1:</p>
         <input
@@ -128,9 +128,9 @@ const TextWorkForm = ({ setFormData, isHidden }: { setFormData: SetState<CreateW
       </div>
       {!isHidden && (
         <>
-          <p className={`${styles.comment} ${styles.first}`}>* 상세 페이지에 등록될 텍스트를 입력해주세요.</p>
-          <p className={styles.comment}>* 작업 파일과 같거나 작업 파일의 일부여야 합니다.</p>
-          <p className={styles.comment}>* 도입부의 텍스트는 썸네일에 노출됩니다.</p>
+          <p className={`${styles.comment} ${styles.first}`}>상세 페이지에 등록될 텍스트를 입력해주세요.</p>
+          <p className={styles.comment}>작업 파일과 같거나 작업 파일의 일부여야 합니다.</p>
+          <p className={styles.comment}>도입부의 텍스트는 썸네일에 노출됩니다.</p>
           <p>샘플:</p>
           <textarea
             className={styles.textSampleLong}
@@ -157,7 +157,7 @@ const TextWorkForm = ({ setFormData, isHidden }: { setFormData: SetState<CreateW
               type="text"
               onBlur={(e) => { updateHashTags(2, e.target.value) }}
             />
-            <p className={styles.comment}>* 검색에 이용됩니다. (선택사항)</p>
+            <p className={styles.comment}>검색에 이용됩니다. (선택사항)</p>
           </div>
         </>
       )}

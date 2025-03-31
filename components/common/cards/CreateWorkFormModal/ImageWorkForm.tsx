@@ -139,8 +139,8 @@ const ImageWorkForm = ({ setFormData, isHidden }: { setFormData: SetState<Create
   return (
     <div className={styles.container}>
       <p className={styles.error}>{validateError}</p>
-      <p className={styles.comment}>* 클라이언트에게 전달할 결과물을 업로드해주세요.</p>
-      <p className={styles.comment}>* 파일이 4개 이상이거나 용량이 클 경우 압축 파일(zip)을 업로드해주세요.</p>
+      <p className={styles.comment}>클라이언트에게 전달할 결과물을 업로드해주세요.</p>
+      <p className={styles.comment}>파일이 4개 이상이거나 용량이 클 경우 압축 파일(zip)을 업로드해주세요.</p>
       <div className={styles.row}>
         <p>파일1:</p>
         <input
@@ -224,10 +224,10 @@ const ImageWorkForm = ({ setFormData, isHidden }: { setFormData: SetState<Create
       </div>
       {!isHidden && (
         <>
-          <p className={`${styles.comment} ${styles.first}`}>* 상세 페이지에 등록될 이미지 파일을 업로드해주세요.</p>
-          <p className={styles.comment}>* 작업 파일과 같거나 유사한 이미지여야 합니다.</p>
+          <p className={`${styles.comment} ${styles.first}`}>상세 페이지에 등록될 이미지 파일을 업로드해주세요.</p>
+          <p className={styles.comment}>작업 파일과 같거나 유사한 이미지여야 합니다.</p>
           <p className={styles.comment}>
-            * 샘플 레이어:&nbsp;
+            샘플 레이어:&nbsp;
             <a className={styles.commentLink} target="_blank" href="https://drive.google.com/drive/folders/1NZT9mOzCMXU_LjxH0TQGNKrzQ6YT1G7Z?usp=sharing" rel="noopener noreferrer">
               다운로드 링크
             </a>
@@ -403,7 +403,7 @@ const ImageWorkForm = ({ setFormData, isHidden }: { setFormData: SetState<Create
               maxLength={500}
               onBlur={(e) => { updateTextSample(e.target.value) }}
             />
-            <p className={styles.comment}>* 샘플 밑에 기재됩니다. (선택사항)</p>
+            <p className={styles.comment}>샘플 밑에 기재됩니다. (선택사항)</p>
           </div>
           <div className={`${styles.row} ${styles.first}`}>
             <p>해시 태그:</p>
@@ -428,7 +428,7 @@ const ImageWorkForm = ({ setFormData, isHidden }: { setFormData: SetState<Create
               maxLength={15}
               onBlur={(e) => { updateHashTags(2, e.target.value) }}
             />
-            <p className={styles.comment}>* 검색에 이용됩니다. (선택사항)</p>
+            <p className={styles.comment}>검색에 이용됩니다. (선택사항)</p>
           </div>
         </>
       )}

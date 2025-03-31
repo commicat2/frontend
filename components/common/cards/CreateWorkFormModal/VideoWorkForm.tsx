@@ -60,8 +60,8 @@ const VideoWorkForm = ({ setFormData, isHidden }: { setFormData: SetState<Create
   return (
     <div className={styles.container}>
       <p className={styles.error}>{validateError}</p>
-      <p className={`${styles.comment} ${styles.first}`}>* 클라이언트에게 전달할 결과물을 업로드해주세요.</p>
-      <p className={styles.comment}>* 파일이 4개 이상이거나 용량이 너무 클 경우 압축 파일(zip)을 업로드해주세요.</p>
+      <p className={`${styles.comment} ${styles.first}`}>클라이언트에게 전달할 결과물을 업로드해주세요.</p>
+      <p className={styles.comment}>파일이 4개 이상이거나 용량이 너무 클 경우 압축 파일(zip)을 업로드해주세요.</p>
       <div className={styles.row}>
         <p>파일1:</p>
         <input
@@ -145,9 +145,9 @@ const VideoWorkForm = ({ setFormData, isHidden }: { setFormData: SetState<Create
       </div>
       {!isHidden && (
         <>
-          <p className={`${styles.comment} ${styles.first}`}>* 상세 페이지에 등록될 .mp4 비디오 파일을 업로드해주세요.</p>
-          <p className={styles.comment}>* 작업 파일과 같거나 작업 파일의 일부(1분~2분)여야 합니다.</p>
-          <p className={styles.comment}>* 샘플1은 썸네일에 사용됩니다.</p>
+          <p className={`${styles.comment} ${styles.first}`}>상세 페이지에 등록될 .mp4 비디오 파일을 업로드해주세요.</p>
+          <p className={styles.comment}>작업 파일과 같거나 작업 파일의 일부(1분~2분)여야 합니다.</p>
+          <p className={styles.comment}>샘플1은 썸네일에 사용됩니다.</p>
           <div className={styles.row}>
             <p>샘플1:</p>
             <input
@@ -254,7 +254,7 @@ const VideoWorkForm = ({ setFormData, isHidden }: { setFormData: SetState<Create
               id="textSample"
               onBlur={(e) => { updateTextSample(e.target.value) }}
             />
-            <p className={styles.comment}>* 샘플 밑에 기재됩니다. (선택사항)</p>
+            <p className={styles.comment}>샘플 밑에 기재됩니다. (선택사항)</p>
           </div>
           <div className={`${styles.row} ${styles.first}`}>
             <p>해시 태그:</p>
@@ -276,7 +276,7 @@ const VideoWorkForm = ({ setFormData, isHidden }: { setFormData: SetState<Create
               type="text"
               onBlur={(e) => { updateHashTags(2, e.target.value) }}
             />
-            <p className={styles.comment}>* 검색에 이용됩니다. (선택사항)</p>
+            <p className={styles.comment}>검색에 이용됩니다. (선택사항)</p>
           </div>
         </>
       )}
