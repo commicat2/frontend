@@ -6,7 +6,7 @@ import styles from './Footer.module.css'
 const Footer = () => {
   return (
     <footer className={styles.footerContainer}>
-      <div className={styles.content}>
+      <div className={styles.footer}>
         <div className={styles.firstRow}>
           <NavLogo />
           <div className={styles.secondItem}>
