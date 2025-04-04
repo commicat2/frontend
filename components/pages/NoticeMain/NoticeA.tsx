@@ -7,9 +7,6 @@ const NoticeA = () => {
       <div className={styles.desktop}>
         <Image fill sizes="100%" priority src="/notice-a.png" alt="Commicat Notice A" />
       </div>
-      <div className={styles.labtop}>
-        <Image fill sizes="100%" priority src="/notice-a-labtop.png" alt="Commicat Notice A Labtop" />
-      </div>
       <div className={styles.mobile}>
         <Image fill sizes="100%" priority src="/notice-a-mobile.png" alt="Commicat Notice A Mobile" />
       </div>

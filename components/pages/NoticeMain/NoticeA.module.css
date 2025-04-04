@@ -6,32 +6,14 @@
   display: block;
   position: relative;
   width: 100%;
-  padding-top: 200%;
-}
-
-.labtop {
-  display: none;
-  position: relative;
-  width: 100%;
-  padding-top: 243.5%;
+  padding-top: 210%;
 }
 
 .mobile {
   display: none;
   position: relative;
   width: 100%;
-  padding-top: 287%;
-}
-
-@media screen and (max-width: 1199px) {
-  .labtop {
-    display: block;
-  }
-
-  .desktop,
-  .mobile {
-    display: none;
-  }
+  padding-top: 270%;
 }
 
 @media screen and (max-width: 767px) {
@@ -39,8 +21,7 @@
     display: block;
   }
 
-  .desktop,
-  .labtop {
+  .desktop {
     display: none;
   }
 }
