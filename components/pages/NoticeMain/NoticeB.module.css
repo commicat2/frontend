@@ -3,7 +3,6 @@
 }
 
 .comment {
-  color: var(--color-gray2);
   font-size: 1.5rem;
   line-height: 150%;
 }
@@ -20,6 +19,13 @@
   width: 100%;
   padding-bottom: 50%;
 }
+
+.image2 {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+}
+
 
 .image img {
   object-fit: contain;
@@ -43,7 +49,6 @@
   
   .headerText {
     font-size: 1.4rem;
-    margin-bottom: 0.6rem;
   }
 
   .comment {

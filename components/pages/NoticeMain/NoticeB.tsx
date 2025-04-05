@@ -14,7 +14,7 @@ const NoticeB = () => {
         </div>
         <br />
         <p>2. 프로필 설정 페이지에서 아이디, 닉네임 등을 설정한 후 저장해주세요.</p>
-        <div className={styles.image} style={{ paddingBottom: '64.5%' }}>
+        <div className={styles.image2}>
           <Image fill sizes="100%" priority src="/guide2.png" alt="Guide 2" />
         </div>
         <p className={styles.comment}>&emsp;- 아이디: 본인의 프로필 페이지의 주소에 사용되는 식별자</p>
@@ -27,7 +27,7 @@ const NoticeB = () => {
         <p className={styles.comment}>&emsp;&emsp;* 본인의 X 계정 자기소개에 본인의 커미캣 프로필 페이지 주소를 적어놓아야 수수료 혜택을 받을 수 있습니다.</p>
         <br />
         <p>3. 이메일 인증 후, 작업 대금을 지급받을 예금주명, 은행이름, 계좌번호를 등록해주세요.</p>
-        <div className={styles.image} style={{ paddingBottom: '42%' }}>
+        <div className={styles.image2}>
           <Image fill sizes="100%" priority src="/guide3.png" alt="Guide 3" />
         </div>
         <p className={styles.comment}>&emsp;a. 이메일: 로그인 시 사용됩니다.</p>
@@ -39,8 +39,8 @@ const NoticeB = () => {
         <p className={styles.comment}>&emsp;d. 크리에이터로서 작업 대금 지급, 클라이언트로서 입금 및 환불 처리에 이용되는 계좌 정보</p>
         <br />
         <p>4. 크리에이터 등록 후, 크리에이터 설정을 완료해주세요.</p>
-        <div className={styles.image} style={{ paddingBottom: '66.2%' }}>
-          <Image fill sizes="100%" priority src="/guide4.png" alt="Guide 4" />
+        <div className={styles.image2}>
+          <Image fill sizes="100%" priority src="/guide4-1.png" alt="Guide 4 1" />
         </div>
         <p className={styles.comment}>&emsp;a. 프로필에 등록한 X 계정 자기소개에 본인의 프로필 페이지 주소를 적고 체크하시면 5%의 수수료로 이용하실 수 있습니다.</p>
         <p className={styles.comment}>&emsp;&emsp;* 허위 기재시 수수료 혜택을 받지 못하실 수 있습니다.</p>
@@ -55,14 +55,16 @@ const NoticeB = () => {
         <p className={styles.comment}>&emsp;&emsp;* 작업중 허용시 요청이 작업중 상태일 때만 dm을 주고받을 수 있습니다.</p>
         <p className={styles.comment}>&emsp;g. 프로필 페이지에 게시되는 자기소개서</p>
         <p className={styles.comment}>&emsp;&emsp;* 이미지 최대 10장, 유튜브 링크 등을 활용할 수 있습니다.</p>
-        <p className={styles.comment}>&emsp;h. 전달할 작업물의 유형</p>
-        <p className={styles.comment}>&emsp;i. 요청 받을 카테고리</p>
-        <p className={styles.comment}>&emsp;j. 작업 요청의 최소 금액</p>
-        <p className={styles.comment}>&emsp;k. 작업 요청의 승인/거절 응답 기한</p>
-        <p className={styles.comment}>&emsp;l. 작업 요청 승인 후 결제가 완료된 시점부터 계산되는 완료 기한</p>
+        <div className={styles.image}>
+          <Image fill sizes="100%" priority src="/guide4-2.png" alt="Guide 4 2" />
+        </div>
+        <p className={styles.comment}>&emsp;h. 전달할 작업물의 유형과 카테고리</p>
+        <p className={styles.comment}>&emsp;i. 작업 요청의 최소 금액</p>
+        <p className={styles.comment}>&emsp;j. 작업 요청의 승인/거절 응답 기한</p>
+        <p className={styles.comment}>&emsp;k. 클라이언트의 결제가 완료된 시점부터 계산되는 완료 기한</p>
         <br />
         <p>5. 작업 상태, 알림, dm 등은 사이트 상단에서 확인할 수 있습니다. 작업 요청이 들어올 경우, b를 눌러 작업 페이지로 이동해주세요.</p>
-        <div className={styles.image} style={{ paddingBottom: '46.5%' }}>
+        <div className={styles.image}>
           <Image fill sizes="100%" priority src="/guide5.png" alt="Guide 5" />
         </div>
         <p className={styles.comment}>&emsp;a. 작업 요청이 들어오거나 요청의 상태가 변경될 때, 그리고 기타 알림 사항이 있을 때 받는 알림 페이지</p>
@@ -72,14 +74,14 @@ const NoticeB = () => {
         <p className={styles.comment}>&emsp;&emsp;* dm은 반드시 작업과 관련된 내용만 주고받아야 합니다.</p>
         <br />
         <p>6. 승인대기 상태의 요청을 처리해주세요.</p>
-        <div className={styles.image} style={{ paddingBottom: '61.4%' }}>
+        <div className={styles.image}>
           <Image fill sizes="100%" priority src="/guide6.png" alt="Guide 6" />
         </div>
         <p className={styles.comment}>&emsp;a. 요청의 유형</p>
         <p className={styles.comment}>&emsp;b. 요청이 생성된 날짜</p>
         <p className={styles.comment}>&emsp;c. 작업의 번호</p>
         <p className={styles.comment}>&emsp;d. 요청의 카테고리와 내용</p>
-        <p className={styles.comment}>&emsp;&emsp;* 요청의 내용또한 공개 유형일 경우 외부에 공개됩니다.</p>
+        <p className={styles.comment}>&emsp;&emsp;* 요청의 내용또한 비공개 유형이 아닐 경우 외부에 공개됩니다.</p>
         <p className={styles.comment}>&emsp;e. 클라이언트가 지불할 작업의 결제 금액</p>
         <p className={styles.comment}>&emsp;&emsp;* 작업 완료 후, 크리에이터는 이 금액에서 중개 수수료를 뺀 금액을 대금으로 지급받습니다.</p>
         <p className={styles.comment}>&emsp;f. 작업 요청 승인 후 결제가 완료된 시점부터 계산되는 완료 기한 일수</p>
@@ -94,11 +96,11 @@ const NoticeB = () => {
         <p>8. 입금 처리가 됐을 경우 요청 내용에 맞게 작업 완료 기한 전까지 작업물을 완성해주세요.</p>
         <p className={styles.comment}>&emsp;* 비공개 요청이 아니라면 상세 페이지에 등록될 샘플 파일들도 준비해주세요.</p>
         <p className={styles.comment}>&emsp;* 작업 완료 기한이 지났을 경우, 요청이 취소되고 프로필 페이지의 작업 완료율이 내려갑니다.</p>
-        <div className={styles.image} style={{ paddingBottom: '63%' }}>
+        <div className={styles.image}>
           <Image fill sizes="100%" priority src="/guide7.png" alt="Guide 7" />
         </div>
         <p className={styles.comment}>&emsp;* 작업중 상태의 카드를 클릭하면 작업 완료를 위한 양식이 열립니다.</p>
-        <div className={styles.image} style={{ paddingBottom: '63%' }}>
+        <div className={styles.image}>
           <Image fill sizes="100%" priority src="/guide8.png" alt="Guide 8" />
         </div>
         <p className={styles.comment}>&emsp;a. 요청한 클라이언트에게 전달할 파일들</p>
@@ -119,24 +121,23 @@ const NoticeB = () => {
         <p>9. 작업 완료 후, 대금을 지급받습니다.</p>
         <p className={styles.comment}>&emsp;* 대금 지급은 24시간 내로 자동으로 이루어집니다.</p>
         <p className={styles.comment}>&emsp;* 설정의 계좌 정보를 다시 확인해주세요.</p>
-        <div className={styles.image} style={{ paddingBottom: '71.8%' }}>
+        <div className={styles.image}>
           <Image fill sizes="100%" priority src="/guide9.png" alt="Guide 9" />
         </div>
         <p className={styles.comment}>&emsp;* 완료 상태 작업 페이지에서 클라이언트/크리에이터는 파일을 다운로드할 수 있습니다.</p>
         <p className={styles.comment}>&emsp;* 비공개 요청이 아니라면 상세 페이지의 링크를 확인할 수 있습니다.</p>
         <br />
         <p>10. 상세 페이지가 게시됩니다.</p>
-        <div className={styles.image} style={{ paddingBottom: '45.6%' }}>
+        <div className={styles.image}>
           <Image fill sizes="100%" priority src="/guide10.png" alt="Guide 10" />
         </div>
-        <br />
         <p>클라이언트에게 어떤 작업을 요청 받는지 다음과 같이 알릴 수 있습니다.</p>
         <p className={styles.comment}>&emsp;* 프로필 설정의 소개란</p>
         <p className={styles.comment}>&emsp;* 포트폴리오</p>
         <p className={styles.comment}>&emsp;* 별다른 설명을 적지 않고, 그동안의 결과물들로만 어떤 작업을 하는지 짐작하게 하셔도 됩니다.</p>
         <br />
         <p>11. 포트폴리오(선택사항) 페이지입니다.</p>
-        <div className={styles.image} style={{ paddingBottom: '50%' }}>
+        <div className={styles.image}>
           <Image fill sizes="100%" priority src="/guide11.png" alt="Guide 11" />
         </div>
         <p className={styles.comment}>&emsp;a. 이미지를 업로드(최대 10장)</p>
