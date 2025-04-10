@@ -8,7 +8,7 @@ const NoticeA = () => {
         <Image fill sizes="100%" priority src="/notice-a.png" alt="Commicat Notice A" />
       </div>
       <div className={styles.mobile}>
-        <Image fill sizes="100%" priority src="/notice-a-mobile.png" alt="Commicat Notice A Mobile" />
+        <Image fill sizes="100%" priority src="/notice-a-mobile.jpg" alt="Commicat Notice A Mobile" />
       </div>
     </main>
   )
