@@ -78,7 +78,7 @@ const NoticeC = () => {
         <p className={styles.comment}>&emsp;g. 요청의 승인/거절 응답 기한입니다.</p>
         <p className={styles.comment}>&emsp;&emsp;* 응답 기한이 지날 경우, 요청은 자동으로 거절됩니다.</p>
         <br />
-        <p>7. 요청이 승낙됐다면, 5일 내로 결제를 진행해주세요.</p>
+        <p>7. 요청이 승낙됐다면, 3일 내로 결제를 진행해주세요.</p>
         <div className={styles.image}>
           <Image fill sizes="100%" priority src="/guide15.png" alt="Guide 15" />
         </div>

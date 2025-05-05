@@ -90,7 +90,7 @@ const NoticeB = () => {
         <p className={styles.comment}>&emsp;&emsp;* 거절 시, 거절 사유를 전달할 수도 있고, 적지 않을 수도 있습니다.</p>
         <br />
         <p>7. 승인 후 클라이언트의 결제를 기다려주세요.</p>
-        <p className={styles.comment}>&emsp;* 결제 기한은 응답한 시점부터 5일 후 까지입니다.</p>
+        <p className={styles.comment}>&emsp;* 결제 기한은 응답한 시점부터 3일 후 까지입니다.</p>
         <p className={styles.comment}>&emsp;* 반복적으로 입금 기한을 넘기는 클라이언트는 서비스 이용제한 될 수 있습니다.</p>
         <br />
         <p>8. 입금 처리가 됐을 경우 요청 내용에 맞게 작업 완료 기한 전까지 작업물을 완성해주세요.</p>
