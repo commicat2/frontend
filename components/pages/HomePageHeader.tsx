@@ -6,7 +6,7 @@ const HomePageHeader = () => {
   return (
     <header className={styles.header}>
       <Link className={styles.banner} href="/notice/4">
-        <Image fill sizes="100%" src="/partner-banner.png" alt="Partner Banner" />
+        <Image fill sizes="100%" src="/end-banner.png" alt="Partner Banner" />
       </Link>
       <div className={styles.content}>
         <p className={styles.headerText}>공지사항</p>
